@@ -1,0 +1,113 @@
+*{
+	color: white;
+	box-sizing: border-box;
+    margin:unset;
+    padding: unset;
+    font-size: 25px;
+}
+body{
+	background-color:black;
+	background-image: url(../asset/fondmarbre.jpg);
+	font-family: 'Yeseva One', sans-serif;
+	
+}
+header{
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+header h1{
+	width: 100%;
+	text-align: center;
+	margin: 2rem;
+	font-size: 30px;
+}
+header p{
+	margin: 2rem;
+}
+nav li{
+	
+	margin-right: 3rem;
+	list-style-type: none;
+}
+nav li a {
+	text-decoration: none;
+}
+nav{
+	
+	display: flex;
+	margin: 2rem;
+}
+	
+nav ul{
+	display: flex;
+	flex-flow: row wrap;
+}
+.description{
+   display: flex;
+   justify-content: center;
+   flex-flow: row wrap;
+   margin: 3rem;
+}
+#artistas{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 3rem;
+}
+#artistas h2{
+	width: 100%;
+	font-size: 32px;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+article{
+	display: flex;
+	flex-flow: row wrap;
+	margin: 2rem;
+	justify-content: center;
+	text-align: center;
+	width: 25%;
+	height: 25%;
+	position: relative;
+	
+}
+article h3{
+	width: 100%;
+	text-align: center;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+	height: 100%;
+	position: absolute;
+	padding: 10px;
+	font-size: 25px;
+
+}
+
+
+article img{
+		width: 100%;
+        object-fit: cover;
+        height: 100%;
+}
+
+.fa-instagram{
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	margin-left: 10px;
+}
+.fa-facebook{
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	left: 60px;
+	margin-left: 10px;
+}
+
+article a {
+	display: flex;
+	justify-content: space-around;
+}
