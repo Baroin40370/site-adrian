@@ -3,13 +3,12 @@
 
 	<head>
 	<meta charset = "utf-8"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" 
-  rel="stylesheet"> 
+  
   <script src="https://kit.fontawesome.com/2c71407923.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-    <title>Tatuajes en Málaga</title>
+  <script src="slider.js"></script>
+    <title>Tatouajes en Málaga</title>
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon">
   </head>
     <body>
       <header>
@@ -40,8 +39,18 @@
           </article>
        <article>
          <h3>ESTEFANIA</h3>
-         <img src="" alt="">
+         <img src="asset/Capture 6.PNG" alt="foto estefania">
+         <a href=""><i class="fa-brands fa-instagram"></i></a>
+         <a href=""><i class="fa-brands fa-facebook"></i></a>
        </article>
+     </section>
+     <section id="portafolio">
+      <h2>Portafolio</h2>
+    <div id="slider">
+        <img src="asset/Capture3.PNG" alt="foto de tatuaje" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+    </div>
      </section>
    </main>
 

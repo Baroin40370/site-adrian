@@ -7,10 +7,9 @@
 }
 body{
 	background-color:black;
-	background-image: url(../asset/fondmarbre.jpg);
-	font-family: 'Yeseva One', sans-serif;
-	
+	font-family: '', sans-serif;
 }
+
 header{
 	display: flex;
 	justify-content: center;
@@ -29,37 +28,56 @@ nav li{
 	
 	margin-right: 3rem;
 	list-style-type: none;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 nav li a {
 	text-decoration: none;
 }
 nav{
-	
+	border: 2px solid rgb(33, 33, 33);
 	display: flex;
 	margin: 2rem;
+	background-color: #1a1e28;
+	width: 100%;
+	justify-content: center;
+	padding: 3rem;
 }
 	
 nav ul{
 	display: flex;
 	flex-flow: row wrap;
 }
+
+main{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
 .description{
    display: flex;
    justify-content: center;
    flex-flow: row wrap;
-   margin: 3rem;
+   margin: 2rem;
+   border: 2px solid rgb(33, 33, 33);
+   background-color: #1a1e28;
+   padding: 3rem;
 }
 #artistas{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 3rem;
+	margin: 2rem;
+	width: 100%;
+	border: 2px solid rgb(33, 33, 33);
+	background-color: #1a1e28;
+	padding: 3rem;
 }
 #artistas h2{
 	width: 100%;
 	font-size: 32px;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 article{
 	display: flex;
@@ -67,9 +85,10 @@ article{
 	margin: 2rem;
 	justify-content: center;
 	text-align: center;
-	width: 25%;
-	height: 25%;
+	width: 35%;
+	height: 70%;
 	position: relative;
+	box-shadow: 0 5px 5px #2a2828;
 	
 }
 article h3{
@@ -80,6 +99,7 @@ article h3{
 	position: absolute;
 	padding: 10px;
 	font-size: 25px;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 
 }
 
@@ -88,6 +108,7 @@ article img{
 		width: 100%;
         object-fit: cover;
         height: 100%;
+		border-radius: 5px;
 }
 
 .fa-instagram{
@@ -97,6 +118,7 @@ article img{
 	bottom: 20px;
 	left: 10px;
 	margin-left: 10px;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 .fa-facebook{
 	font-size: 40px;
@@ -105,9 +127,74 @@ article img{
 	bottom: 20px;
 	left: 60px;
 	margin-left: 10px;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 
 article a {
 	display: flex;
 	justify-content: space-around;
+}
+#portafolio{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	border: solid 2px rgb(33, 33, 33);
+	box-shadow: 0 5px 5px #2a2828;
+	border-radius: 10px;
+	width: 100%;
+	background-color: #1a1e28;
+	margin: 2rem;
+	padding: 3rem;
+  }
+	
+
+
+#portafolio h2{
+	width: 100%;
+	font-size: 38px;
+	text-align: center;
+	margin-bottom: 3rem;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+
+#slider {
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36%;
+	border: solid 2px black;
+	background-color: black;
+	border-radius: 2rem;
+}
+#slide{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 2rem;
+}
+
+#precedent, #suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 100px;
+    color:white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    padding: 10px;
+	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider:hover #precedent,
+#slider:hover #suivant {
+    opacity: 1;
 }
