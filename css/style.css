@@ -82,7 +82,7 @@ main{
 article{
 	display: flex;
 	flex-flow: row wrap;
-	margin: 2rem;
+	margin: 1rem;
 	justify-content: center;
 	text-align: center;
 	width: 35%;
@@ -139,9 +139,7 @@ article a {
 	flex-flow: row wrap;
 	justify-content: center;
 	border: solid 2px rgb(33, 33, 33);
-	box-shadow: 0 5px 5px #2a2828;
-	border-radius: 10px;
-	width: 100%;
+    width: 100%;
 	background-color: #1a1e28;
 	margin: 2rem;
 	padding: 3rem;
@@ -162,10 +160,12 @@ article a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 36%;
-	border: solid 2px black;
+	width: 1000px;
+	height: 350px;
+	border: solid 2px #1a1e28;
 	background-color: black;
 	border-radius: 2rem;
+	box-shadow: 0 5px 5px #2a2828;
 }
 #slide{
 	object-fit: cover;
