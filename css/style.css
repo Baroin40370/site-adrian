@@ -1,200 +1,247 @@
-*{
-	color: white;
-	box-sizing: border-box;
-    margin:unset;
-    padding: unset;
-    font-size: 25px;
+@font-face {
+  font-family: "font 1";
+  src: url(../asset/fonts/BERNIERRegular-Regular.otf);
 }
-body{
-	background-color:black;
-	font-family: '', sans-serif;
-}
-
-header{
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-}
-header h1{
-	width: 100%;
-	text-align: center;
-	margin: 2rem;
-	font-size: 30px;
-}
-header p{
-	margin: 2rem;
-}
-nav li{
-	
-	margin-right: 3rem;
-	list-style-type: none;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-}
-nav li a {
-	text-decoration: none;
-}
-nav{
-	border: 2px solid rgb(33, 33, 33);
-	display: flex;
-	margin: 2rem;
-	background-color: #1a1e28;
-	width: 100%;
-	justify-content: center;
-	padding: 3rem;
-}
-	
-nav ul{
-	display: flex;
-	flex-flow: row wrap;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "font 1", sans-serif;
 }
 
-main{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-.description{
-   display: flex;
-   justify-content: center;
-   flex-flow: row wrap;
-   margin: 2rem;
-   border: 2px solid rgb(33, 33, 33);
-   background-color: #1a1e28;
-   padding: 3rem;
-}
-#artistas{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 2rem;
-	width: 100%;
-	border: 2px solid rgb(33, 33, 33);
-	background-color: #1a1e28;
-	padding: 3rem;
-}
-#artistas h2{
-	width: 100%;
-	font-size: 32px;
-	margin-bottom: 1rem;
-	text-align: center;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-}
-article{
-	display: flex;
-	flex-flow: row wrap;
-	margin: 1rem;
-	justify-content: center;
-	text-align: center;
-	width: 35%;
-	height: 70%;
-	position: relative;
-	box-shadow: 0 5px 5px #2a2828;
-	
-}
-article h3{
-	width: 100%;
-	text-align: center;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-	height: 100%;
-	position: absolute;
-	padding: 10px;
-	font-size: 25px;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-
+body {
+  background: url("../asset/fondmarbre.jpg"), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(16, 16, 16, 0.997) 100%);
+  font-family: "font 1", sans-serif;
+  color: #F6F6F6;
+  font-size: 25px;
 }
 
-
-article img{
-		width: 100%;
-        object-fit: cover;
-        height: 100%;
-		border-radius: 5px;
+li {
+  list-style-type: none;
 }
 
-.fa-instagram{
-	font-size: 40px;
-	color: white;
-	position: absolute;
-	bottom: 20px;
-	left: 10px;
-	margin-left: 10px;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-}
-.fa-facebook{
-	font-size: 40px;
-	color: white;
-	position: absolute;
-	bottom: 20px;
-	left: 60px;
-	margin-left: 10px;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+a {
+  text-decoration: none;
 }
 
-article a {
-	display: flex;
-	justify-content: space-around;
-}
-#portafolio{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	border: solid 2px rgb(33, 33, 33);
-    width: 100%;
-	background-color: #1a1e28;
-	margin: 2rem;
-	padding: 3rem;
-  }
-	
-
-
-#portafolio h2{
-	width: 100%;
-	font-size: 38px;
-	text-align: center;
-	margin-bottom: 3rem;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+p {
+  font-family: "Roboto Slab", sans-serif;
 }
 
-#slider {
-    position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 1000px;
-	height: 350px;
-	border: solid 2px #1a1e28;
-	background-color: black;
-	border-radius: 2rem;
-	box-shadow: 0 5px 5px #2a2828;
+header {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
-#slide{
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	border-radius: 2rem;
+header h1 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem;
+}
+header p {
+  margin: 2rem;
 }
 
-#precedent, #suivant {
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    position: absolute;
-    font-size: 100px;
-    color:white;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    padding: 10px;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+nav {
+  border-radius: 1rem;
+  border: 2px solid rgb(33, 33, 33);
+  display: flex;
+  margin: 2rem;
+  padding: 3rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  width: 100%;
+  justify-content: center;
+  font-size: 35px;
+}
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+nav li {
+  margin-right: 3rem;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+  margin-left: 3rem;
 }
 
-#precedent {
-    left: 0;
+main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-#suivant {
-    right: 0;
+.description {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(33, 33, 33);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+}
+.description h2 {
+  margin: 2rem;
 }
 
-#slider:hover #precedent,
-#slider:hover #suivant {
-    opacity: 1;
+.tipos {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  margin: 2rem;
+  padding: 3rem;
 }
+.tipos h2 {
+  width: 100%;
+  text-align: center;
+}
+.tipos p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.minimalista {
+  width: 50%;
+  background-position: right bottom;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%), url(../asset/minimalista.jpg);
+  background-color: #1a1e28;
+  padding: 3rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+.minimalista h3 {
+  width: 100%;
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.minimalista p {
+  text-align: inherit;
+}
+
+#artistas {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(33, 33, 33);
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+}
+#artistas h2 {
+  width: 100%;
+  font-size: 32px;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#artistas article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 1rem;
+  text-align: center;
+  width: 35%;
+  height: 70%;
+  position: relative;
+}
+#artistas h3 {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  height: 100%;
+  position: absolute;
+  padding: 10px;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#artistas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+#artistas .fa-instagram {
+  font-size: 40px;
+  color: #F6F6F6;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  margin-left: 10px;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#artistas .fa-facebook {
+  font-size: 40px;
+  color: #F6F6F6;
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  margin-left: 10px;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#artistas a {
+  display: flex;
+  justify-content: space-around;
+}
+
+#portafolio {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  border-radius: 1rem;
+  border: 2px solid rgb(33, 33, 33);
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  margin: 2rem;
+  padding: 3rem;
+}
+#portafolio h2 {
+  width: 100%;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#portafolio #slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 350px;
+  border: solid 2px #1a1e28;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  border-radius: 1rem;
+}
+#portafolio #slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+#portafolio #precedent, #portafolio #suivant {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 100px;
+  color: #F6F6F6;
+  padding: 10px;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#portafolio #precedent {
+  left: 0;
+}
+#portafolio #suivant {
+  right: 0;
+}
+#portafolio #slider:hover #precedent,
+#portafolio #slider:hover #suivant {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.tipos{
+	@include center;
+	align-items: center;
+	width: 100%;
+	@include margin;
+	h2{
+		@include centrage;
+	}
+	p{
+		@include centrage;
+		margin-bottom: 2rem;
+	}
+	
+}
