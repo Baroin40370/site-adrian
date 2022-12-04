@@ -1,17 +1,12 @@
 .minimalista{
-        width: 50%;
-        background-position: right bottom;
+        @include article;
         background-image: $degrade,
         url(../asset/minimalista.jpg);
         background-color: #1a1e28;
-        padding: 3rem;
-        margin: 2rem;
-        border-radius: 1rem;
+        background-position: right;
+        @include border;
     h3{
-        width: 100%;
-        text-align: inherit;
-        font-size: 30px;
-        margin-bottom: 2rem
+        @include titrearticle;
     }
     p{
         text-align: inherit

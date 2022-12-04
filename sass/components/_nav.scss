@@ -2,8 +2,11 @@
 nav{
 	@include border;
 	display: flex;
-	@include margin;
-	background:$degrade;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 3rem;
+	padding: 4rem;
+	@include fondbox;
 	width: 100%;
 	justify-content: center;
 	font-size: 35px;

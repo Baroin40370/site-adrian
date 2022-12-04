@@ -11,10 +11,13 @@
 }
 
 body {
-  background: url("../asset/fondmarbre.jpg"), linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(16, 16, 16, 0.997) 100%);
   font-family: "font 1", sans-serif;
   color: #F6F6F6;
   font-size: 25px;
+  background: linear-gradient(180deg, rgba(8, 11, 19, 0.21) 0%, #080b13 89%), url("../asset/femme.jpg"), fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 52%;
 }
 
 li {
@@ -45,11 +48,14 @@ header p {
 
 nav {
   border-radius: 1rem;
-  border: 2px solid rgb(33, 33, 33);
+  border: 2px solid rgb(151, 149, 149);
   display: flex;
-  margin: 2rem;
-  padding: 3rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  padding: 4rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
+  color: #000309;
   width: 100%;
   justify-content: center;
   font-size: 35px;
@@ -77,8 +83,8 @@ main {
   margin: 2rem;
   padding: 3rem;
   border-radius: 1rem;
-  border: 2px solid rgb(33, 33, 33);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  border: 2px solid rgb(151, 149, 149);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
 }
 .description h2 {
   margin: 2rem;
@@ -104,13 +110,18 @@ main {
 }
 
 .minimalista {
-  width: 50%;
-  background-position: right bottom;
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%), url(../asset/minimalista.jpg);
   background-color: #1a1e28;
-  padding: 3rem;
-  margin: 2rem;
+  background-position: right;
   border-radius: 1rem;
+  border: 2px solid rgb(151, 149, 149);
 }
 .minimalista h3 {
   width: 100%;
@@ -122,6 +133,77 @@ main {
   text-align: inherit;
 }
 
+.realismo {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%), url(../asset/realismo.jpg);
+  background-color: #1a1e28;
+  background-position: center;
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  border: 2px solid rgb(151, 149, 149);
+}
+.realismo h3 {
+  width: 100%;
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.realismo p {
+  text-align: inherit;
+}
+
+.tribal {
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%), url(../asset/tribal.jpg);
+  background-color: #1a1e28;
+  background-position: left, top;
+  border-radius: 1rem;
+  border: 2px solid rgb(151, 149, 149);
+}
+.tribal h3 {
+  width: 100%;
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.tribal p {
+  text-align: inherit;
+}
+
+.cover {
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  background-color: rgba(7, 8, 10, 0.3882352941);
+  border-radius: 1rem;
+  border: 2px solid rgb(151, 149, 149);
+}
+.cover h3 {
+  width: 100%;
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.cover p {
+  text-align: inherit;
+}
+
 #artistas {
   display: flex;
   justify-content: center;
@@ -129,9 +211,9 @@ main {
   margin: 2rem;
   padding: 3rem;
   border-radius: 1rem;
-  border: 2px solid rgb(33, 33, 33);
+  border: 2px solid rgb(151, 149, 149);
   width: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
 }
 #artistas h2 {
   width: 100%;
@@ -193,9 +275,9 @@ main {
   justify-content: center;
   flex-flow: row wrap;
   border-radius: 1rem;
-  border: 2px solid rgb(33, 33, 33);
+  border: 2px solid rgb(151, 149, 149);
   width: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
   margin: 2rem;
   padding: 3rem;
 }

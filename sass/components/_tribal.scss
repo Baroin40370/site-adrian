@@ -1,0 +1,16 @@
+.tribal{
+    @include article;
+    background-image: $degrade,
+    url(../asset/tribal.jpg);
+    background-color: #1a1e28;
+    background-position: left,top;
+    @include border;
+h3{
+    @include titrearticle;
+}
+p{
+    text-align: inherit
+}
+
+    
+}

@@ -1,0 +1,15 @@
+.cover{
+    @include article;
+    background-image: $degrade;
+    background-color: #07080a63;
+    @include border;
+    
+h3{
+    @include titrearticle;
+}
+p{
+    text-align: inherit
+}
+
+    
+}

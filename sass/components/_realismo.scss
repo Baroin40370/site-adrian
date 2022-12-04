@@ -1,0 +1,16 @@
+.realismo{
+    background-image: $degrade,
+    url(../asset/realismo.jpg);
+    background-color: #1a1e28;
+    background-position: center;
+    @include article;
+    @include border;
+h3{
+    @include titrearticle;
+}
+p{
+    text-align: inherit
+}
+
+    
+}
