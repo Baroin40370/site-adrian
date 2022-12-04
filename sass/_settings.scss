@@ -5,11 +5,11 @@
 }
   $backgroundfond:url('../asset/femme.jpg');
   $font-1:'font 1', sans-serif;
-  $font-2:'Yeseva One',sans-serif;
+  $font-2:'karla',sans-serif;
   $color-white: #F6F6F6;
   $degradebox:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%)#000000a6;
-  $degradefond:linear-gradient(180deg,rgba(8,11,19,0.21) 0%,#080b13 89%);
-  $degrade:linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
+  $degradefond:linear-gradient(180deg,rgba(8,11,19,0.75) 0%,#080b13 89%);
+  $degrade:linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%);
   
   @mixin fondbox{
   background:$degradebox;
@@ -46,17 +46,17 @@
 
 @mixin border{
     border-radius: 1rem;
-    border: 2px solid rgb(151, 149, 149);
+    /*border: 2px solid rgb(151, 149, 149);*/
 }
 
 @mixin article{
   width: 45%;
   background-size: cover;
   background-color: #1a1e28;
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    height: 500px;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
 }
 
 @mixin titrearticle{
@@ -86,6 +86,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 52%;
+    max-width: 1000px;
+    margin: auto;
   }
   li {
     list-style-type: none;
