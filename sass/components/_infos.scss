@@ -1,0 +1,41 @@
+.infos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    img{
+    @include border;
+    width: 85%;
+    height: 400px;
+    object-fit: cover
+}
+article{
+    display: flex;
+    background-color: #1a1e28;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
+    background-color: rgba(7, 8, 10, 0.3882352941);
+    align-items: center;
+
+    }
+    .bloc{
+        border: 2px solid rgb(151, 149, 149);
+        width: 45%;
+        background-size: cover;
+        background-color: #1a1e28;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 1rem;
+        height: 400px;
+    }
+    
+     h2{
+      @include titrearticle;
+     }
+    p{
+        text-align: inherit;
+        padding: 5px;
+        
+    }
+}

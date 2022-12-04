@@ -3,7 +3,8 @@
 	@include margin;
     @include border;
 	width: 100%;
-	background:$degradebox;
+	background:$degrade;
+	color: black;
 h2{
 	width: 100%;
 	font-size: 32px;
@@ -56,6 +57,14 @@ h3{
  a {
 	display: flex;
 	justify-content: space-around;
+	font-family: $font-2;
+	
+}
+p{
+	font-family: $font-1;
+	margin: 1rem;
+	
+	
 }
 }
 

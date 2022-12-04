@@ -10,10 +10,13 @@
   font-family: "font 1", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "font 1", sans-serif;
   color: #F6F6F6;
-  font-size: 25px;
   background: linear-gradient(180deg, rgba(8, 11, 19, 0.21) 0%, #080b13 89%), url("../asset/femme.jpg"), fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,6 +25,7 @@ body {
 
 li {
   list-style-type: none;
+  font-size: 35px;
 }
 
 a {
@@ -29,7 +33,24 @@ a {
 }
 
 p {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 25px;
 }
 
 header {
@@ -58,7 +79,6 @@ nav {
   color: #000309;
   width: 100%;
   justify-content: center;
-  font-size: 35px;
 }
 nav ul {
   display: flex;
@@ -96,8 +116,8 @@ main {
   flex-flow: row wrap;
   align-items: center;
   width: 100%;
-  margin: 2rem;
-  padding: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .tipos h2 {
   width: 100%;
@@ -117,7 +137,7 @@ main {
   margin: 1rem;
   border-radius: 1rem;
   height: 500px;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%), url(../asset/minimalista.jpg);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%), url(../asset/minimalista.jpg);
   background-color: #1a1e28;
   background-position: right;
   border-radius: 1rem;
@@ -134,7 +154,7 @@ main {
 }
 
 .realismo {
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%), url(../asset/realismo.jpg);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%), url(../asset/realismo.jpg);
   background-color: #1a1e28;
   background-position: center;
   width: 45%;
@@ -165,7 +185,7 @@ main {
   margin: 1rem;
   border-radius: 1rem;
   height: 500px;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%), url(../asset/tribal.jpg);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%), url(../asset/tribal.jpg);
   background-color: #1a1e28;
   background-position: left, top;
   border-radius: 1rem;
@@ -189,7 +209,7 @@ main {
   margin: 1rem;
   border-radius: 1rem;
   height: 500px;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
   background-color: rgba(7, 8, 10, 0.3882352941);
   border-radius: 1rem;
   border: 2px solid rgb(151, 149, 149);
@@ -213,7 +233,8 @@ main {
   border-radius: 1rem;
   border: 2px solid rgb(151, 149, 149);
   width: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
+  color: black;
 }
 #artistas h2 {
   width: 100%;
@@ -235,7 +256,7 @@ main {
 #artistas h3 {
   width: 100%;
   text-align: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
   height: 100%;
   position: absolute;
   padding: 10px;
@@ -268,6 +289,11 @@ main {
 #artistas a {
   display: flex;
   justify-content: space-around;
+  font-family: "Yeseva One", sans-serif;
+}
+#artistas p {
+  font-family: "font 1", sans-serif;
+  margin: 1rem;
 }
 
 #portafolio {
@@ -276,8 +302,6 @@ main {
   flex-flow: row wrap;
   border-radius: 1rem;
   border: 2px solid rgb(151, 149, 149);
-  width: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
   margin: 2rem;
   padding: 3rem;
 }
@@ -295,14 +319,11 @@ main {
   justify-content: center;
   width: 1000px;
   height: 350px;
-  border: solid 2px #1a1e28;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
-  border-radius: 1rem;
 }
 #portafolio #slide {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 1rem;
 }
 #portafolio #precedent, #portafolio #suivant {
@@ -324,6 +345,49 @@ main {
 #portafolio #slider:hover #precedent,
 #portafolio #slider:hover #suivant {
   opacity: 1;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.infos img {
+  border-radius: 1rem;
+  border: 2px solid rgb(151, 149, 149);
+  width: 85%;
+  height: 400px;
+  object-fit: cover;
+}
+.infos article {
+  display: flex;
+  background-color: #1a1e28;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
+  background-color: rgba(7, 8, 10, 0.3882352941);
+  align-items: center;
+}
+.infos .bloc {
+  border: 2px solid rgb(151, 149, 149);
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 400px;
+}
+.infos h2 {
+  width: 100%;
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.infos p {
+  text-align: inherit;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

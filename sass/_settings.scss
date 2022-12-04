@@ -5,11 +5,11 @@
 }
   $backgroundfond:url('../asset/femme.jpg');
   $font-1:'font 1', sans-serif;
-  $font-2:'Roboto Slab',sans-serif;
+  $font-2:'Yeseva One',sans-serif;
   $color-white: #F6F6F6;
   $degradebox:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%)#000000a6;
   $degradefond:linear-gradient(180deg,rgba(8,11,19,0.21) 0%,#080b13 89%);
-  $degrade:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%);
+  $degrade:linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
   
   @mixin fondbox{
   background:$degradebox;
@@ -74,10 +74,14 @@
     font-family: $font-1;
 	}
   
+  html{
+  font-size:62.5%;
+  }
+
+  
   body {
     font-family: $font-1;
     color: $color-white;
-    font-size: 25px;
     background: $degradefond,$backgroundfond,fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -85,10 +89,26 @@
   }
   li {
     list-style-type: none;
+    font-size: 35px;
 }
 a{
     text-decoration: none;
 }
 p{
     font-family: $font-2;
+    font-size: 20px;
+}
+
+h1{
+  font-size: 35px;
+}
+
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 27px;
+}
+h4{
+  font-size: 25px;
 }
