@@ -8,6 +8,9 @@
     
 h3{
     @include titrearticle;
+    border-color: #783a1d;
+    border-bottom-style: solid;
+    width: 22%;
 }
 p{
     text-align: inherit

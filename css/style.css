@@ -147,11 +147,6 @@ main {
   text-align: center;
   margin-bottom: 2rem;
 }
-.tipos h3 {
-  border-color: #783a1d;
-  border-bottom-style: solid;
-  width: 10%;
-}
 
 .minimalista {
   width: 45%;
@@ -172,6 +167,9 @@ main {
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 41%;
 }
 .minimalista p {
   text-align: inherit;
@@ -196,6 +194,9 @@ main {
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 32%;
 }
 .realismo p {
   text-align: inherit;
@@ -220,6 +221,9 @@ main {
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 24%;
 }
 .tribal p {
   text-align: inherit;
@@ -243,6 +247,9 @@ main {
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 22%;
 }
 .cover p {
   text-align: inherit;
