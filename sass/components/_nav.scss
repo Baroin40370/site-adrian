@@ -23,7 +23,7 @@ nav{
      }
 	 .deroulant{
 		opacity: 0;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		li{
 			margin: unset;
@@ -36,6 +36,7 @@ nav{
 	
 		  visibility: visible;
 		  opacity: 1;
+		  display: flex;
 		}
 	}
 		
