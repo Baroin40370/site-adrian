@@ -1,9 +1,16 @@
 .tipos{
-	@include center;
+	display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
 	align-items: center;
 	width: 100%;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	article{
+		padding:1rem;
+	}
 	h2{
 		@include centrage;
 	}
