@@ -5,8 +5,12 @@
         background-color: #1a1e28;
         background-position: right;
         @include border;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        
     h3{
         @include titrearticle;
+        
     }
     p{
         text-align: inherit

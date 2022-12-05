@@ -5,6 +5,8 @@
     background-color: #1a1e28;
     background-position: left,top;
     @include border;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 h3{
     @include titrearticle;
 }

@@ -1,0 +1,31 @@
+.contact{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        margin: 2rem;
+    }
+    .separation{
+        border-bottom-style: solid;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        border-color: #783a1d;
+    }
+    i{
+        padding-right: 1rem;
+        font-size: 30px;
+    }
+    p{
+     padding-bottom: 1rem;
+ } 
+ h2{
+    padding-bottom: 1rem;
+ }
+}

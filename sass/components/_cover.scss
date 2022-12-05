@@ -3,6 +3,8 @@
     background-image: $degrade;
     background-color: #07080a63;
     @include border;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     
 h3{
     @include titrearticle;

@@ -46,7 +46,7 @@
 
 @mixin border{
     border-radius: 1rem;
-    /*border: 2px solid rgb(151, 149, 149);*/
+    
 }
 
 @mixin article{
@@ -60,7 +60,6 @@
 }
 
 @mixin titrearticle{
-  width: 100%;
     text-align: inherit;
     font-size: 30px;
     margin-bottom: 2rem
@@ -110,6 +109,7 @@ h2{
 }
 h3{
   font-size: 27px;
+  
 }
 h4{
   font-size: 25px;

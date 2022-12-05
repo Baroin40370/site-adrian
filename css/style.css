@@ -71,12 +71,12 @@ header p {
 
 nav {
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
   display: flex;
+  flex-flow: row, nowrap;
   margin-right: 2rem;
   margin-left: 2rem;
   margin-bottom: 3rem;
-  padding: 4rem;
+  padding: 3rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
   color: #000309;
   width: 100%;
@@ -90,6 +90,22 @@ nav li {
   margin-right: 3rem;
   text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
   margin-left: 3rem;
+}
+nav .deroulant {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+nav .deroulant li {
+  margin: unset;
+}
+nav .menu {
+  cursor: pointer;
+}
+nav .menu:hover .deroulant,
+nav .menu .deroulant:hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 main {
@@ -105,7 +121,6 @@ main {
   margin: 2rem;
   padding: 3rem;
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
 }
 .description h2 {
@@ -119,12 +134,9 @@ main {
   align-items: center;
   width: 100%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
-}
-.tipos article {
-  padding: 1rem;
 }
 .tipos h2 {
   width: 100%;
@@ -134,6 +146,11 @@ main {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
+}
+.tipos h3 {
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 10%;
 }
 
 .minimalista {
@@ -148,10 +165,10 @@ main {
   background-color: #1a1e28;
   background-position: right;
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .minimalista h3 {
-  width: 100%;
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
@@ -172,10 +189,10 @@ main {
   border-radius: 1rem;
   height: 500px;
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .realismo h3 {
-  width: 100%;
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
@@ -196,10 +213,10 @@ main {
   background-color: #1a1e28;
   background-position: left, top;
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .tribal h3 {
-  width: 100%;
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
@@ -219,10 +236,10 @@ main {
   background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%);
   background-color: rgba(7, 8, 10, 0.3882352941);
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .cover h3 {
-  width: 100%;
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
@@ -233,22 +250,25 @@ main {
 
 #artistas {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-flow: row wrap;
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
   width: 100%;
   background: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%);
   color: black;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 #artistas h2 {
   width: 100%;
   font-size: 32px;
   margin-bottom: 1rem;
   text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 #artistas article {
   display: flex;
@@ -267,7 +287,6 @@ main {
   height: 100%;
   position: absolute;
   padding: 10px;
-  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 #artistas img {
   width: 100%;
@@ -308,7 +327,6 @@ main {
   justify-content: center;
   flex-flow: row wrap;
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
   margin: 2rem;
   padding: 3rem;
 }
@@ -361,7 +379,6 @@ main {
 }
 .infos img {
   border-radius: 1rem;
-  /*border: 2px solid rgb(151, 149, 149);*/
   width: 85%;
   height: 400px;
   object-fit: cover;
@@ -386,7 +403,6 @@ main {
   height: 400px;
 }
 .infos h2 {
-  width: 100%;
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
@@ -394,6 +410,46 @@ main {
 .infos p {
   text-align: inherit;
   padding: 5px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  margin: 2rem;
+}
+.contact .separation {
+  border-bottom-style: solid;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-color: #783a1d;
+}
+.contact i {
+  padding-right: 1rem;
+  font-size: 30px;
+}
+.contact p {
+  padding-bottom: 1rem;
+}
+.contact h2 {
+  padding-bottom: 1rem;
+}
+
+footer {
+  width: 100%;
+  margin: 2rem;
+}
+footer p {
+  font-size: 10px;
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
