@@ -5,7 +5,12 @@
     @include border;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    
+    .bloc{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 h3{
     @include titrearticle;
     border-color: #783a1d;
@@ -14,6 +19,10 @@ h3{
 }
 p{
     text-align: inherit
+}
+img{
+    width: 75px;
+    height: auto;
 }
 
     

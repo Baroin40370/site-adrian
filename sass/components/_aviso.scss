@@ -1,0 +1,48 @@
+.aviso{
+    background-image: none;
+    background-color:black;
+    
+.information{
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-family:$font-2 ;
+        margin-bottom: 2rem;
+        border-bottom-style: solid;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        border-color: #783a1d;
+    }h2{
+        font-family:$font-2 ;
+        margin-bottom: 2rem;
+        border-bottom-style: solid;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        border-color: #783a1d;
+    }h3{
+        font-family: $font-2;
+        margin-bottom: 2rem;
+        border-bottom-style: solid;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        border-color: #783a1d;
+    }li{
+        font-family: $font-2;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+}article{
+    margin: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}

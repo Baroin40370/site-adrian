@@ -1,6 +1,6 @@
 
 nav{
-	@include border;
+	border-radius:0 0 1rem 1rem;
 	display: flex;
 	flex-flow: row,nowrap;
 	margin-right: 2rem;

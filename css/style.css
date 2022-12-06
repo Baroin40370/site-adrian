@@ -70,7 +70,7 @@ header p {
 }
 
 nav {
-  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   display: flex;
   flex-flow: row, nowrap;
   margin-right: 2rem;
@@ -126,6 +126,10 @@ main {
 }
 .description h2 {
   margin: 2rem;
+}
+.description img {
+  width: 75px;
+  height: auto;
 }
 
 .tipos {
@@ -244,6 +248,12 @@ main {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.cover .bloc {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .cover h3 {
   text-align: inherit;
   font-size: 30px;
@@ -254,6 +264,10 @@ main {
 }
 .cover p {
   text-align: inherit;
+}
+.cover img {
+  width: 75px;
+  height: auto;
 }
 
 #artistas {
@@ -324,6 +338,8 @@ main {
   display: flex;
   justify-content: space-around;
   font-family: "karla", sans-serif;
+  width: 100%;
+  height: 100%;
 }
 #artistas p {
   font-family: "font 1", sans-serif;
@@ -350,7 +366,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1000px;
+  width: 900px;
   height: 350px;
 }
 #portafolio #slide {
@@ -395,7 +411,7 @@ main {
   display: flex;
   background-color: #1a1e28;
   padding: 2rem;
-  margin: 1rem;
+  margin: 2rem;
   border-radius: 1rem;
   background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.07) 0%, rgba(1, 1, 1, 0.7) 100%);
   background-color: rgba(7, 8, 10, 0.3882352941);
@@ -418,6 +434,10 @@ main {
 .infos p {
   text-align: inherit;
   padding: 5px;
+}
+.infos .icon {
+  width: 75px;
+  height: auto;
 }
 
 .contact {
@@ -458,6 +478,61 @@ footer {
 footer p {
   font-size: 10px;
   padding-bottom: 5px;
+}
+footer .mention {
+  font-family: "karla", sans-serif;
+}
+
+.aviso {
+  background-image: none;
+  background-color: black;
+}
+.aviso .information {
+  display: flex;
+  flex-direction: column;
+}
+.aviso .information h1 {
+  font-family: "karla", sans-serif;
+  margin-bottom: 2rem;
+  border-bottom-style: solid;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-color: #783a1d;
+}
+.aviso .information h2 {
+  font-family: "karla", sans-serif;
+  margin-bottom: 2rem;
+  border-bottom-style: solid;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-color: #783a1d;
+}
+.aviso .information h3 {
+  font-family: "karla", sans-serif;
+  margin-bottom: 2rem;
+  border-bottom-style: solid;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-color: #783a1d;
+}
+.aviso .information li {
+  font-family: "karla", sans-serif;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.aviso article {
+  margin: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

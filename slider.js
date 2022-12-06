@@ -1,5 +1,5 @@
-let slide = new Array("asset/Capture1.PNG","asset/Capture2.PNG", "asset/Capture3.PNG",
-"asset/Capture4.PNG", "asset/Capture7.PNG");
+let slide = new Array("../asset/Capture1.PNG","../asset/Capture2.PNG", "../asset/Capture3.PNG",
+"../asset/Capture4.PNG", "../asset/Capture7.PNG");
 let numero = 0;
 
 function ChangeSlide(sens) {
