@@ -1,5 +1,8 @@
-let slide = new Array("../asset/Capture1.PNG","../asset/Capture2.PNG", "../asset/Capture3.PNG",
-"../asset/Capture4.PNG", "../asset/Capture7.PNG");
+if (typeof slide === "undefined")
+{
+    slide = [];
+}
+
 let numero = 0;
 
 function ChangeSlide(sens) {
@@ -10,3 +13,4 @@ function ChangeSlide(sens) {
         numero = 0;
     document.getElementById("slide").src = slide[numero];
 };
+ChangeSlide(0);

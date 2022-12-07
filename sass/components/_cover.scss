@@ -5,13 +5,14 @@
     @include border;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    position: relative;
     .bloc{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-end;
     }
-h3{
+    h3{
     @include titrearticle;
     border-color: #783a1d;
     border-bottom-style: solid;
@@ -23,6 +24,9 @@ p{
 img{
     width: 75px;
     height: auto;
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
 }
 
     

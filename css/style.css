@@ -131,6 +131,13 @@ main {
   width: 75px;
   height: auto;
 }
+.description .titre {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
 .tipos {
   display: flex;
@@ -146,6 +153,9 @@ main {
 .tipos h2 {
   width: 100%;
   text-align: center;
+}
+.tipos h3 {
+  margin-top: 3rem;
 }
 .tipos p {
   width: 100%;
@@ -247,6 +257,7 @@ main {
   border-radius: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  position: relative;
 }
 .cover .bloc {
   display: flex;
@@ -268,6 +279,9 @@ main {
 .cover img {
   width: 75px;
   height: auto;
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
 }
 
 #artistas {
@@ -532,6 +546,13 @@ footer .mention {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.aviso .contact article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 .propos {
