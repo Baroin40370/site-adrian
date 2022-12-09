@@ -371,6 +371,9 @@ main {
   height: 70%;
   position: relative;
 }
+#artistas article:hover {
+  transform: scale(1.01);
+}
 #artistas h3 {
   width: 100%;
   text-align: center;
