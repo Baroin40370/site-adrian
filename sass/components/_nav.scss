@@ -5,11 +5,12 @@ nav{
 	flex-flow: row nowrap;
 	margin-right: 2rem;
 	margin-left: 2rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	padding: 3rem;
 	@include fondbox;
-	width: 100%;
 	justify-content: center;
+	position: absolute;
+
 	
 	
 	ul{
@@ -17,9 +18,10 @@ nav{
 	    flex-flow: row wrap;
      }
 	 li{
-        margin-right: 3rem;
+        margin-right: 4rem;
         text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 		margin-left: 3rem;
+		position: relative;
      }
 	 .deroulant{
 		opacity: 0;
@@ -40,7 +42,6 @@ nav{
 		}
 	}
 		
-	 
-}
+}		
 	
-
+	

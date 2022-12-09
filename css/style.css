@@ -12,6 +12,8 @@
 
 html {
   font-size: 62.5%;
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -63,7 +65,7 @@ header {
 header h1 {
   width: 100%;
   text-align: center;
-  margin: 2rem;
+  margin-top: 21rem;
 }
 header p {
   margin: 2rem;
@@ -75,21 +77,22 @@ nav {
   flex-flow: row nowrap;
   margin-right: 2rem;
   margin-left: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding: 3rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(1, 1, 1) 100%) rgba(0, 0, 0, 0.6509803922);
   color: #000309;
-  width: 100%;
   justify-content: center;
+  position: absolute;
 }
 nav ul {
   display: flex;
   flex-flow: row wrap;
 }
 nav li {
-  margin-right: 3rem;
+  margin-right: 4rem;
   text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
   margin-left: 3rem;
+  position: relative;
 }
 nav .deroulant {
   opacity: 0;
@@ -113,6 +116,58 @@ main {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+#banniere {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 3rem;
+  border: solid rgba(53, 50, 50, 0);
+  background-color: #0f0e0e;
+}
+#banniere h2 {
+  width: 100%;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#banniere #slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 350px;
+}
+#banniere #slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+#banniere #precedent, #banniere #suivant {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  font-size: 100px;
+  color: #F6F6F6;
+  padding: 10px;
+  text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+}
+#banniere #precedent {
+  left: 0;
+}
+#banniere #suivant {
+  right: 0;
+}
+#banniere #slider:hover #precedent,
+#banniere #slider:hover #suivant {
+  opacity: 1;
 }
 
 .description {
@@ -675,6 +730,32 @@ footer .mention {
   left: 10px;
   top: 4rem;
   right: 10px;
+}
+
+.to-top {
+  background-color: rgba(0, 0, 0, 0.3803921569);
+  position: fixed;
+  bottom: 16px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  border: 1px solid #783a1d;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
