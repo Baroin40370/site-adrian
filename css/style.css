@@ -723,21 +723,26 @@ footer .mention {
 }
 
 @media (max-width: 668px) {
-  header {
-    width: 100%;
-  }
   header nav {
     width: 100%;
     margin-left: unset;
     padding-left: unset;
     margin-right: unset;
+    padding-right: unset;
   }
   header h1 {
     margin-top: 36rem;
   }
+  header ul {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  header li {
+    margin: unset;
+  }
   #banniere #slider {
     width: 100%;
-    height: auto;
+    height: 280px;
   }
   .tipos .minimalista {
     width: 100%;
@@ -775,6 +780,28 @@ footer .mention {
     width: 100%;
     height: auto;
     margin-bottom: 6rem;
+  }
+  #artistas i {
+    display: none;
+  }
+  #tarifas {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #tarifas img {
+    width: 100%;
+    height: auto;
+  }
+  #tarifas .bloc {
+    width: 100%;
+    height: auto;
+  }
+  #tarifas .bloc img {
+    width: 20%;
+  }
+  footer {
+    margin: unset;
+    padding: 10px;
   }
 }
 
