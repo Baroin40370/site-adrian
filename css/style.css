@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "font 1";
   src: url(../asset/fonts/BERNIERRegular-Regular.otf);
@@ -217,110 +218,38 @@ main {
   text-align: center;
   margin-bottom: 2rem;
 }
-
-.minimalista {
-  width: 45%;
-  background-size: cover;
-  background-color: #1a1e28;
-  padding: 2rem 8rem 2rem 2rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  height: 500px;
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/minimalista.jpg);
-  background-color: #1a1e28;
-  background-position: right;
-  border-radius: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.minimalista h3 {
-  text-align: inherit;
-  font-size: 30px;
-  margin-bottom: 2rem;
-  border-color: #783a1d;
-  border-bottom-style: solid;
-  width: 41%;
-}
-.minimalista p {
-  text-align: inherit;
-}
-
-.realismo {
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/realismo.jpg);
-  background-color: #1a1e28;
-  background-position: center;
-  width: 45%;
-  background-size: cover;
-  background-color: #1a1e28;
-  padding: 2rem 8rem 2rem 2rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  height: 500px;
-  border-radius: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.realismo h3 {
-  text-align: inherit;
-  font-size: 30px;
-  margin-bottom: 2rem;
-  border-color: #783a1d;
-  border-bottom-style: solid;
-  width: 32%;
-}
-.realismo p {
-  text-align: inherit;
-}
-
-.tribal {
-  width: 45%;
-  background-size: cover;
-  background-color: #1a1e28;
-  padding: 2rem 8rem 2rem 2rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  height: 500px;
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/tribal.jpg);
-  background-color: #1a1e28;
-  background-position: left, top;
-  border-radius: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.tribal h3 {
-  text-align: inherit;
-  font-size: 30px;
-  margin-bottom: 2rem;
-  border-color: #783a1d;
-  border-bottom-style: solid;
-  width: 24%;
-}
-.tribal p {
-  text-align: inherit;
-}
-
-.cover {
-  width: 45%;
-  background-size: cover;
-  background-color: #1a1e28;
-  padding: 2rem 8rem 2rem 2rem;
-  margin: 1rem;
-  border-radius: 1rem;
-  height: 500px;
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%);
-  background-color: rgba(7, 8, 10, 0.3882352941);
-  border-radius: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  position: relative;
-}
-.cover .bloc {
+.tipos .bloc {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
-.cover h3 {
+.tipos .bloc p {
+  text-align: inherit;
+}
+.tipos img {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+}
+.tipos .cover {
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%);
+  background-color: rgba(7, 8, 10, 0.3882352941);
+  position: relative;
+}
+.tipos .cover h3 {
   text-align: inherit;
   font-size: 30px;
   margin-bottom: 2rem;
@@ -328,15 +257,143 @@ main {
   border-bottom-style: solid;
   width: 22%;
 }
-.cover p {
-  text-align: inherit;
+.tipos .minimalista {
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/minimalista.jpg);
+  background-color: #1a1e28;
+  background-position: right;
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-.cover img {
-  width: 75px;
-  height: auto;
-  position: absolute;
-  top: 3rem;
-  right: 4rem;
+.tipos .minimalista h3 {
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 41%;
+}
+.tipos .tribal {
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/tribal.jpg);
+  background-color: #1a1e28;
+  background-position: left, top;
+}
+.tipos .tribal h3 {
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 24%;
+}
+.tipos .realismo {
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/realismo.jpg);
+  background-color: #1a1e28;
+  background-position: center;
+}
+.tipos .realismo h3 {
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 32%;
+}
+.tipos .dimension {
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/dimension.jpg);
+  background-color: #1a1e28;
+  background-position: right;
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.tipos .dimension h3 {
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 41%;
+}
+.tipos .mandalas {
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/mandala.png);
+  background-color: #1a1e28;
+  background-position: right;
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.tipos .mandalas h3 {
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 35%;
+}
+.tipos .diseño {
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/Capture8.PNG);
+  background-color: #1a1e28;
+  background-position: left;
+  width: 45%;
+  background-size: cover;
+  background-color: #1a1e28;
+  padding: 2rem 8rem 2rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.tipos .diseño h3 {
+  text-align: inherit;
+  font-size: 30px;
+  margin-bottom: 2rem;
+  border-color: #783a1d;
+  border-bottom-style: solid;
+  width: 23%;
 }
 
 #artistas {
@@ -370,6 +427,7 @@ main {
   width: 35%;
   height: 70%;
   position: relative;
+  mix-blend-mode: luminosity;
 }
 #artistas article:hover {
   transform: scale(1.01);
@@ -593,6 +651,7 @@ footer .mention {
 .adrian .propos img {
   width: 80%;
   border-radius: 15px;
+  mix-blend-mode: luminosity;
 }
 .adrian .propos a {
   margin-left: 5px;
@@ -611,20 +670,25 @@ footer .mention {
 .adrian #portafolio article {
   border-radius: 15px;
   width: 30%;
-  height: 20%;
+  height: 350px;
   background-color: rgba(0, 0, 0, 0.5098039216);
   margin: 2rem;
   padding: 3rem;
+}
+.adrian #portafolio article:hover {
+  transform: scale(1.01);
 }
 .adrian #portafolio img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  mix-blend-mode: luminosity;
 }
 .adrian #portafolio .titre {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .adrian #portafolio h1 {
   border-color: #783a1d;
@@ -656,6 +720,62 @@ footer .mention {
   bottom: 32px;
   pointer-events: auto;
   opacity: 1;
+}
+
+@media (max-width: 668px) {
+  header {
+    width: 100%;
+  }
+  header nav {
+    width: 100%;
+    margin-left: unset;
+    padding-left: unset;
+    margin-right: unset;
+  }
+  header h1 {
+    margin-top: 36rem;
+  }
+  #banniere #slider {
+    width: 100%;
+    height: auto;
+  }
+  .tipos .minimalista {
+    width: 100%;
+    height: auto;
+  }
+  .tipos .realismo {
+    width: 100%;
+    height: auto;
+  }
+  .tipos .tribal {
+    width: 100%;
+    height: auto;
+  }
+  .tipos .dimension {
+    width: 100%;
+    height: auto;
+  }
+  .tipos .mandalas {
+    width: 100%;
+    height: auto;
+  }
+  .tipos .diseño {
+    width: 100%;
+    height: auto;
+  }
+  .tipos .cover {
+    width: 100%;
+    height: auto;
+  }
+  #artistas {
+    flex-flow: column;
+    align-items: center;
+  }
+  #artistas article {
+    width: 100%;
+    height: auto;
+    margin-bottom: 6rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

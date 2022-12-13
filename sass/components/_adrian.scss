@@ -25,6 +25,7 @@
         img{
             width: 80%;
             border-radius: 15px;
+            mix-blend-mode: luminosity;
         }
         a {
           margin-left: 5px;  
@@ -43,21 +44,25 @@
         article{
             border-radius: 15px;
             width: 30%;
-            height: 20%;
+            height: 350px;
             background-color: #00000082;
             @include margin;
-        }
+        }article:hover{
+            transform: scale(1.01);
+         }
         img{
             @include img;
+            mix-blend-mode: luminosity;
         }.titre{
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-bottom: 2rem;
         } 
         h1{
         border-color: #783a1d;
         border-bottom-style: solid;
         width: 15%;
-       }
+        }
     }
 }

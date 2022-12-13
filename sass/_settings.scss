@@ -16,6 +16,19 @@
   color: #000309;
   }
 
+  @mixin tiposarticle{
+    @include article;
+    @include border;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+  }
+
+  @mixin tiposh3{
+    @include titrearticle;
+						border-color: #783a1d;
+						border-bottom-style: solid;
+  }
+
  @mixin center {
     display: flex;
     justify-content: center;

@@ -17,6 +17,88 @@
 	p{
 		@include centrage;
 		margin-bottom: 2rem;
-	}
-	
-}
+	}.bloc{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+			p{
+				text-align: inherit
+			}
+    }img{
+		width: 75px;
+		height: auto;
+		position: absolute;
+		top: 3rem;
+		right: 4rem;
+	}.cover{
+        @include tiposarticle;
+		background-image: $degrade;
+		background-color: #07080a63;
+		position: relative;
+			h3{
+			@include tiposh3;
+			width: 22%;
+			}
+	}.minimalista{
+        background-image: $degrade,
+        url(../asset/minimalista.jpg);
+        background-color: #1a1e28;
+        background-position: right;
+        @include tiposarticle;
+			h3{
+			@include tiposh3;
+			width: 41%;
+			}	
+		}.tribal{
+			@include tiposarticle;
+			background-image: $degrade,
+			url(../asset/tribal.jpg);
+			background-color: #1a1e28;
+			background-position: left,top;
+				h3{
+					@include tiposh3;
+					width: 24%;
+				}
+			}.realismo{
+				@include tiposarticle;
+				background-image: $degrade,
+				url(../asset/realismo.jpg);
+				background-color: #1a1e28;
+				background-position: center;
+					h3{
+						@include tiposh3;
+						width: 32%;
+					}
+			}.dimension{
+				background-image: $degrade,
+				url(../asset/dimension.jpg);
+				background-color: #1a1e28;
+				background-position: right;
+				@include tiposarticle;
+					h3{
+					@include tiposh3;
+					width: 41%;
+					}
+			}.mandalas{
+				background-image: $degrade,
+				url(../asset/mandala.png);
+				background-color: #1a1e28;
+				background-position: right;
+				@include tiposarticle;
+					h3{
+					@include tiposh3;
+					width: 35%;
+					}
+			}.diseño{
+				background-image: $degrade,
+				url(../asset/Capture8.PNG);
+				background-color: #1a1e28;
+				background-position: left;
+				@include tiposarticle;
+					h3{
+					@include tiposh3;
+					width: 23%;
+					}
+			}																		
+	}     
