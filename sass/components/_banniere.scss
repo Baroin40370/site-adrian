@@ -1,52 +1,56 @@
-#banniere{
-    @include center;
-	@include border;
-    @include margin;
-    border: solid #35323200;
-    background-color: #0f0e0e;
-	
-	h2{
-	width: 100%;
-	font-size: 38px;
-	text-align: center;
-	margin-bottom: 3rem;
-	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-	
-}
-#slider {
-    position: relative;
-	@include vertical;
-	width: 900px;
-	height: 350px;
-}
-  #slide{
-	width: 100%;
-    height: 100%;
-    object-fit: cover;
-	border-radius: 1rem;
-}
-#precedent, #suivant {
-    cursor: pointer;
-	transition: opacity 0.3s ease;
-    opacity: 0;
-    position: absolute;
-    font-size: 100px;
-    color:$color-white;
-    padding: 10px;
-    text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-    
-}
+.banniere{
+    width: 100%;
+        #banniere{
+            @include center;
+            @include border;
+            @include margin;
+            border: solid #35323200;
+            background-color: #0f0e0e;
+            
+            h2{
+            width: 100%;
+            font-size: 38px;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+            
+        }
+        #slider {
+            position: relative;
+            @include vertical;
+            width: 100%;
+            height: 350px;
+            mix-blend-mode: luminosity;
+        }
+            #slide{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1rem;
+            }
+            #precedent, #suivant {
+                cursor: pointer;
+                transition: opacity 0.3s ease;
+                opacity: 0;
+                position: absolute;
+                font-size: 100px;
+                color:$color-white;
+                padding: 10px;
+                text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
+                
+            }
 
-#precedent {
-    left: 0;
-}
+                #precedent {
+                    left: 0;
+                }
 
-#suivant {
-    right: 0;
-}
+                #suivant {
+                    right: 0;
+                }
 
-#slider:hover #precedent,
-#slider:hover #suivant {
-    opacity: 1;
-}
+                #slider:hover #precedent,
+                #slider:hover #suivant {
+                    opacity: 1;
+                }
+        }
 }

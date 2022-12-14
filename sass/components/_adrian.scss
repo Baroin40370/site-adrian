@@ -1,10 +1,12 @@
 .adrian{
     margin-top: 20rem;
+    width: 100%;
     .propos{
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
             align-items: flex-start;
+            margin-bottom: 6rem;
         h1{
             width: 100%;
             font-size: 32px;
@@ -14,7 +16,6 @@
             width: 22%;
          }   
         article{
-            @include margin;
             width: 45%;
             display: flex;
             justify-content: end;
@@ -28,11 +29,17 @@
             mix-blend-mode: luminosity;
         }
         a {
-          margin-left: 5px;  
-        }
+          margin-left: 5px;
+          &:hover{
+            opacity: 0.8;
+            color: #783a1d;
+          }
+        }.lien{
+            font-size: 25px ;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            }
         
-    }article{
-        @include margin;
     }
    
     #portafolio{
@@ -41,23 +48,25 @@
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        article{
+        margin-top: 6rem;
+         article{
             border-radius: 15px;
             width: 30%;
             height: 350px;
             background-color: #00000082;
-            @include margin;
+            padding: 3rem;
+            margin-bottom: 5rem;
         }article:hover{
             transform: scale(1.01);
-         }
-        img{
+           }
+         img{
             @include img;
             mix-blend-mode: luminosity;
         }.titre{
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
         } 
         h1{
         border-color: #783a1d;
@@ -65,4 +74,5 @@
         width: 15%;
         }
     }
+
 }

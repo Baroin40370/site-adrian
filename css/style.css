@@ -20,7 +20,7 @@ html {
 body {
   font-family: "font 1", sans-serif;
   color: #F6F6F6;
-  background: linear-gradient(180deg, rgba(8, 11, 19, 0.75) 0%, #080b13 89%), url("../asset/femme.jpg"), fixed;
+  background: linear-gradient(180deg, rgba(8, 11, 19, 0.75) 0%, #080b13 89%), url("../asset/femme.webp"), fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 52%;
@@ -103,6 +103,13 @@ nav .deroulant {
 nav .deroulant li {
   margin: unset;
 }
+nav .deroulant a {
+  font-family: "karla", sans-serif;
+}
+nav .deroulant a:hover {
+  opacity: 0.7;
+  color: #783a1d;
+}
 nav .menu {
   cursor: pointer;
 }
@@ -119,7 +126,10 @@ main {
   flex-flow: row wrap;
 }
 
-#banniere {
+.banniere {
+  width: 100%;
+}
+.banniere #banniere {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -129,28 +139,29 @@ main {
   border: solid rgba(53, 50, 50, 0);
   background-color: #0f0e0e;
 }
-#banniere h2 {
+.banniere #banniere h2 {
   width: 100%;
   font-size: 38px;
   text-align: center;
   margin-bottom: 3rem;
   text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
-#banniere #slider {
+.banniere #banniere #slider {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 900px;
+  width: 100%;
   height: 350px;
+  mix-blend-mode: luminosity;
 }
-#banniere #slide {
+.banniere #banniere #slide {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
-#banniere #precedent, #banniere #suivant {
+.banniere #banniere #precedent, .banniere #banniere #suivant {
   cursor: pointer;
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -160,14 +171,14 @@ main {
   padding: 10px;
   text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
-#banniere #precedent {
+.banniere #banniere #precedent {
   left: 0;
 }
-#banniere #suivant {
+.banniere #banniere #suivant {
   right: 0;
 }
-#banniere #slider:hover #precedent,
-#banniere #slider:hover #suivant {
+.banniere #banniere #slider:hover #precedent,
+.banniere #banniere #slider:hover #suivant {
   opacity: 1;
 }
 
@@ -258,7 +269,7 @@ main {
   width: 22%;
 }
 .tipos .minimalista {
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/minimalista.jpg);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/minimalista.webp);
   background-color: #1a1e28;
   background-position: right;
   width: 45%;
@@ -291,7 +302,7 @@ main {
   border-radius: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/tribal.jpg);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/tribal.webp);
   background-color: #1a1e28;
   background-position: left, top;
 }
@@ -314,7 +325,7 @@ main {
   border-radius: 1rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/realismo.jpg);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/realismo.webp);
   background-color: #1a1e28;
   background-position: center;
 }
@@ -327,7 +338,7 @@ main {
   width: 32%;
 }
 .tipos .dimension {
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/dimension.jpg);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/dimension.webp);
   background-color: #1a1e28;
   background-position: right;
   width: 45%;
@@ -350,7 +361,7 @@ main {
   width: 41%;
 }
 .tipos .mandalas {
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/mandala.png);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/mandala.webp);
   background-color: #1a1e28;
   background-position: right;
   width: 45%;
@@ -373,7 +384,7 @@ main {
   width: 35%;
 }
 .tipos .diseño {
-  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/Capture8.PNG);
+  background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/diseno.webp);
   background-color: #1a1e28;
   background-position: left;
   width: 45%;
@@ -623,12 +634,14 @@ footer .mention {
 
 .adrian {
   margin-top: 20rem;
+  width: 100%;
 }
 .adrian .propos {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-start;
+  margin-bottom: 6rem;
 }
 .adrian .propos h1 {
   width: 100%;
@@ -639,8 +652,6 @@ footer .mention {
   width: 22%;
 }
 .adrian .propos article {
-  margin: 2rem;
-  padding: 3rem;
   width: 45%;
   display: flex;
   justify-content: end;
@@ -656,9 +667,14 @@ footer .mention {
 .adrian .propos a {
   margin-left: 5px;
 }
-.adrian article {
-  margin: 2rem;
-  padding: 3rem;
+.adrian .propos a:hover {
+  opacity: 0.8;
+  color: #783a1d;
+}
+.adrian .propos .lien {
+  font-size: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .adrian #portafolio {
   display: flex;
@@ -666,14 +682,15 @@ footer .mention {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  margin-top: 6rem;
 }
 .adrian #portafolio article {
   border-radius: 15px;
   width: 30%;
   height: 350px;
   background-color: rgba(0, 0, 0, 0.5098039216);
-  margin: 2rem;
   padding: 3rem;
+  margin-bottom: 5rem;
 }
 .adrian #portafolio article:hover {
   transform: scale(1.01);
@@ -688,7 +705,7 @@ footer .mention {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .adrian #portafolio h1 {
   border-color: #783a1d;
@@ -802,6 +819,20 @@ footer .mention {
   footer {
     margin: unset;
     padding: 10px;
+  }
+  .adrian .propos {
+    margin-left: 1rem;
+    margin-top: 18rem;
+  }
+  .adrian .propos h1 {
+    width: 51%;
+  }
+  .adrian #portafolio h1 {
+    width: 39%;
+  }
+  .adrian #portafolio article {
+    width: 45%;
+    height: 250px;
   }
 }
 

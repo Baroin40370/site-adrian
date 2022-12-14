@@ -29,6 +29,12 @@ nav{
 		flex-direction: column;
 		li{
 			margin: unset;
+		 }a{
+			font-family: $font-2;
+			 &:hover{
+				opacity: 0.7;
+				color: #783a1d;
+			 }
 		 }
 	 }
 	 .menu {
@@ -39,6 +45,8 @@ nav{
 		  visibility: visible;
 		  opacity: 1;
 		  display: flex;
+		  
+		
 		}
 	}
 		

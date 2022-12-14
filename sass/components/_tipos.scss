@@ -42,7 +42,7 @@
 			}
 	}.minimalista{
         background-image: $degrade,
-        url(../asset/minimalista.jpg);
+        url(../asset/minimalista.webp);
         background-color: #1a1e28;
         background-position: right;
         @include tiposarticle;
@@ -53,7 +53,7 @@
 		}.tribal{
 			@include tiposarticle;
 			background-image: $degrade,
-			url(../asset/tribal.jpg);
+			url(../asset/tribal.webp);
 			background-color: #1a1e28;
 			background-position: left,top;
 				h3{
@@ -63,7 +63,7 @@
 			}.realismo{
 				@include tiposarticle;
 				background-image: $degrade,
-				url(../asset/realismo.jpg);
+				url(../asset/realismo.webp);
 				background-color: #1a1e28;
 				background-position: center;
 					h3{
@@ -72,7 +72,7 @@
 					}
 			}.dimension{
 				background-image: $degrade,
-				url(../asset/dimension.jpg);
+				url(../asset/dimension.webp);
 				background-color: #1a1e28;
 				background-position: right;
 				@include tiposarticle;
@@ -82,7 +82,7 @@
 					}
 			}.mandalas{
 				background-image: $degrade,
-				url(../asset/mandala.png);
+				url(../asset/mandala.webp);
 				background-color: #1a1e28;
 				background-position: right;
 				@include tiposarticle;
@@ -92,7 +92,7 @@
 					}
 			}.diseño{
 				background-image: $degrade,
-				url(../asset/Capture8.PNG);
+				url(../asset/diseno.webp);
 				background-color: #1a1e28;
 				background-position: left;
 				@include tiposarticle;
