@@ -102,6 +102,7 @@ nav .deroulant {
 }
 nav .deroulant li {
   margin: unset;
+  font-size: 28px;
 }
 nav .deroulant a {
   font-family: "karla", sans-serif;
@@ -577,6 +578,9 @@ footer .mention {
   background-image: none;
   background-color: black;
 }
+.aviso main {
+  margin-top: 15rem;
+}
 .aviso .information {
   display: flex;
   flex-direction: column;
@@ -633,7 +637,7 @@ footer .mention {
 }
 
 .adrian {
-  margin-top: 20rem;
+  margin-top: 22rem;
   width: 100%;
 }
 .adrian .propos {
@@ -748,14 +752,15 @@ footer .mention {
     padding-right: unset;
   }
   header h1 {
-    margin-top: 36rem;
+    margin-top: 38rem;
   }
   header ul {
-    flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
   header li {
     margin: unset;
+    padding: 10px;
+    width: 50%;
   }
   #banniere #slider {
     width: 100%;
@@ -821,14 +826,30 @@ footer .mention {
     padding: 10px;
   }
   .adrian .propos {
-    margin-left: 1rem;
     margin-top: 18rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
   }
   .adrian .propos h1 {
-    width: 51%;
+    width: 100%;
+  }
+  .adrian .propos .lien {
+    font-size: 20px;
+  }
+  .adrian .propos article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .adrian #portafolio h1 {
-    width: 39%;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
   }
   .adrian #portafolio article {
     width: 45%;

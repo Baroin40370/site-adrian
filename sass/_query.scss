@@ -7,12 +7,13 @@
             margin-right: unset;
             padding-right: unset;
            }h1{
-            margin-top: 36rem;
+            margin-top: 38rem;
            }ul{
-            flex-flow:column nowrap;
-            justify-content: center;
+            justify-content: flex-start;
            }li{
             margin: unset;
+            padding: 10px;
+            width: 50%;
            }  
     }#banniere{
        #slider{
@@ -70,14 +71,28 @@
         padding: 10px;
     }.adrian{
        .propos{
-        margin-left: 1rem;
         margin-top: 18rem;
-        h1{
-            width: 51%;
-        }
-        }#portafolio{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
             h1{
-                width: 39%;
+                width: 100%;
+            }.lien{
+                font-size: 20px;
+            }article{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        } #portafolio{
+            h1{
+                width: 100%;
+                text-align: center;
+                margin: 20px;
             }article{
                 width: 45%;
                 height: 250px;
