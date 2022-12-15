@@ -821,6 +821,9 @@ footer .mention {
   #tarifas .bloc img {
     width: 20%;
   }
+  .contact article {
+    margin: unset;
+  }
   footer {
     margin: unset;
     padding: 10px;
@@ -854,6 +857,21 @@ footer .mention {
   .adrian #portafolio article {
     width: 45%;
     height: 250px;
+  }
+  .aviso main {
+    margin-top: 35rem;
+  }
+  .aviso main .information {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .aviso main .information article {
+    margin: unset;
+    padding: unset;
+  }
+  .aviso main .contact article {
+    margin: unset;
   }
 }
 

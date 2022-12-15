@@ -66,6 +66,8 @@
                 width: 20%;
             }
         }
+    }.contact article{
+        margin:unset;
     }footer{
         margin: unset;
         padding: 10px;
@@ -98,5 +100,19 @@
                 height: 250px;
             }
         }
+    }.aviso main{
+        margin-top: 35rem;
+        .information{
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+            article{
+            margin: unset;
+            padding: unset
+            }    
+        }.contact article{
+            margin:unset;
+        }
+         
     }
 }
