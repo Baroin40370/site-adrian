@@ -73,7 +73,7 @@
         padding: 10px;
     }.adrian{
        .propos{
-        margin-top: 18rem;
+        margin-top: 14rem;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -89,8 +89,10 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                margin-bottom: 3rem;
             }
         } #portafolio{
+            margin-top: 2rem;
             h1{
                 width: 100%;
                 text-align: center;
@@ -101,7 +103,8 @@
             }
         }
     }.aviso main{
-        margin-top: 35rem;
+        margin-top: 39rem;
+        text-align: center;
         .information{
           justify-content: center;
           align-items: center;
@@ -109,6 +112,10 @@
             article{
             margin: unset;
             padding: unset
+            }h1{
+                font-size: 25px;
+            }h2{
+                font-size: 20px;
             }    
         }.contact article{
             margin:unset;

@@ -829,7 +829,7 @@ footer .mention {
     padding: 10px;
   }
   .adrian .propos {
-    margin-top: 18rem;
+    margin-top: 14rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -848,6 +848,10 @@ footer .mention {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
+  }
+  .adrian #portafolio {
+    margin-top: 2rem;
   }
   .adrian #portafolio h1 {
     width: 100%;
@@ -859,7 +863,8 @@ footer .mention {
     height: 250px;
   }
   .aviso main {
-    margin-top: 35rem;
+    margin-top: 39rem;
+    text-align: center;
   }
   .aviso main .information {
     justify-content: center;
@@ -869,6 +874,12 @@ footer .mention {
   .aviso main .information article {
     margin: unset;
     padding: unset;
+  }
+  .aviso main .information h1 {
+    font-size: 25px;
+  }
+  .aviso main .information h2 {
+    font-size: 20px;
   }
   .aviso main .contact article {
     margin: unset;
