@@ -1,4 +1,4 @@
-@media (max-width: 668px){
+@media (max-width: 740px){
         p{
             font-size: 18px;
         }
@@ -10,11 +10,7 @@
             margin-right: unset;
             padding-right: unset;
             z-index:1;
-            .fas{
-                display: flex;
-                font-size: 30px;
-                
-            }
+            
             .deroulant{
                 li{
                     margin-left: 4rem;
@@ -35,7 +31,6 @@
                 }
                  .query{
                     width: 100%;
-                    cursor: pointer;
                     &:hover .premier,
                     .premier :hover {
                         visibility: visible;
@@ -44,16 +39,20 @@
                         flex-direction: column;
                         align-items: flex-start;
                     }
-                }   
+                }.query i{
+                display: flex;
+                font-size: 30px;
+                cursor: pointer;
+            }   
             }h1{
             margin-top: 10rem;
             }li{
             margin: unset;
             width: 50%;
-            font-size: 22px;
+            font-size: 28px;
             padding: 5px;
            }a{
-            font-size: 22px;
+            font-size: 28px;
             }
             p{
                 text-align: center;
@@ -90,7 +89,9 @@
     }#artistas{
         flex-flow: column;
         align-items: center;
-        padding: 20px;
+        padding: unset;
+        background: unset;
+        color: unset;
         article{
             width: 100%;
             height: 350px;
@@ -110,6 +111,9 @@
     }#tarifas{
         flex-direction: column;
         flex-wrap: wrap;
+        padding: unset;
+        background: unset;
+        color: unset;
         img{
             width: 100%;
             height: auto;

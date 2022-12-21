@@ -93,9 +93,9 @@ nav ul {
   flex-flow: row nowrap;
 }
 nav li {
-  margin-right: 4rem;
+  margin-right: 2rem;
   text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-  margin-left: 3rem;
+  margin-left: 2rem;
   position: relative;
 }
 nav .deroulant {
@@ -518,7 +518,7 @@ main {
   padding: 3rem;
   margin: 1rem;
   border-radius: 1rem;
-  height: 400px;
+  height: auto;
 }
 .infos h2 {
   text-align: inherit;
@@ -746,7 +746,7 @@ footer .mention {
   opacity: 1;
 }
 
-@media (max-width: 668px) {
+@media (max-width: 740px) {
   p {
     font-size: 18px;
   }
@@ -757,10 +757,6 @@ footer .mention {
     margin-right: unset;
     padding-right: unset;
     z-index: 1;
-  }
-  header nav .fas {
-    display: flex;
-    font-size: 30px;
   }
   header nav .deroulant li {
     margin-left: 4rem;
@@ -780,7 +776,6 @@ footer .mention {
   }
   header nav .query {
     width: 100%;
-    cursor: pointer;
   }
   header nav .query:hover .premier,
   header nav .query .premier :hover {
@@ -790,17 +785,22 @@ footer .mention {
     flex-direction: column;
     align-items: flex-start;
   }
+  header nav .query i {
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+  }
   header h1 {
     margin-top: 10rem;
   }
   header li {
     margin: unset;
     width: 50%;
-    font-size: 22px;
+    font-size: 28px;
     padding: 5px;
   }
   header a {
-    font-size: 22px;
+    font-size: 28px;
   }
   header p {
     text-align: center;
@@ -840,7 +840,9 @@ footer .mention {
   #artistas {
     flex-flow: column;
     align-items: center;
-    padding: 20px;
+    padding: unset;
+    background: unset;
+    color: unset;
   }
   #artistas article {
     width: 100%;
@@ -862,6 +864,9 @@ footer .mention {
   #tarifas {
     flex-direction: column;
     flex-wrap: wrap;
+    padding: unset;
+    background: unset;
+    color: unset;
   }
   #tarifas img {
     width: 100%;
