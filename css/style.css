@@ -85,9 +85,12 @@ nav {
   justify-content: center;
   position: absolute;
 }
+nav .fas {
+  display: none;
+}
 nav ul {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 nav li {
   margin-right: 4rem;
@@ -744,23 +747,63 @@ footer .mention {
 }
 
 @media (max-width: 668px) {
+  p {
+    font-size: 18px;
+  }
   header nav {
     width: 100%;
     margin-left: unset;
     padding-left: unset;
     margin-right: unset;
     padding-right: unset;
+    z-index: 1;
+  }
+  header nav .fas {
+    display: flex;
+    font-size: 30px;
+  }
+  header nav .deroulant li {
+    margin-left: 4rem;
+    padding: unset;
+  }
+  header nav .premier {
+    display: none;
+    opacity: 0;
+    margin-top: 3rem;
+  }
+  header nav .align {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 2rem;
+  }
+  header nav .query {
+    width: 100%;
+    cursor: pointer;
+  }
+  header nav .query:hover .premier,
+  header nav .query .premier :hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   header h1 {
-    margin-top: 41rem;
-  }
-  header ul {
-    justify-content: flex-start;
+    margin-top: 10rem;
   }
   header li {
     margin: unset;
-    padding: 10px;
     width: 50%;
+    font-size: 22px;
+    padding: 5px;
+  }
+  header a {
+    font-size: 22px;
+  }
+  header p {
+    text-align: center;
   }
   #banniere #slider {
     width: 100%;
@@ -797,13 +840,23 @@ footer .mention {
   #artistas {
     flex-flow: column;
     align-items: center;
+    padding: 20px;
   }
   #artistas article {
     width: 100%;
-    height: auto;
-    margin-bottom: 6rem;
+    height: 350px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
   }
-  #artistas i {
+  #artistas article a {
+    width: 100%;
+  }
+  #artistas article img {
+    border-radius: 10px;
+  }
+  #artistas article i {
     display: none;
   }
   #tarifas {
@@ -817,6 +870,10 @@ footer .mention {
   #tarifas .bloc {
     width: 100%;
     height: auto;
+    padding: 20px;
+    margin-top: 2rem;
+    margin-left: unset;
+    margin-right: unset;
   }
   #tarifas .bloc img {
     width: 20%;
@@ -828,8 +885,10 @@ footer .mention {
     margin: unset;
     padding: 10px;
   }
+  .adrian {
+    margin-top: 11rem;
+  }
   .adrian .propos {
-    margin-top: 14rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -859,11 +918,12 @@ footer .mention {
     margin: 20px;
   }
   .adrian #portafolio article {
-    width: 45%;
-    height: 250px;
+    width: 90%;
+    height: 350px;
+    margin-bottom: 2rem;
   }
   .aviso main {
-    margin-top: 39rem;
+    margin-top: 8rem;
     text-align: center;
   }
   .aviso main .information {
@@ -872,8 +932,8 @@ footer .mention {
     width: 100%;
   }
   .aviso main .information article {
-    margin: unset;
-    padding: unset;
+    margin: 2rem;
+    padding: 10px;
   }
   .aviso main .information h1 {
     font-size: 25px;

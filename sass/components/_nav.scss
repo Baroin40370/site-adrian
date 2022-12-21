@@ -10,12 +10,14 @@ nav{
 	@include fondbox;
 	justify-content: center;
 	position: absolute;
-
+		.fas{
+			display: none;
+		}
 	
 	
 	ul{
         display: flex;
-	    flex-flow: row wrap;
+	    flex-flow: row nowrap;
      }
 	 li{
         margin-right: 4rem;
