@@ -8,6 +8,14 @@
 	margin-bottom: 3rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	 article{
+		opacity: 0.7;
+	 }
+	 article:hover{
+		opacity:1;
+		transition: opacity 0.4s ease;
+	}
+	 
 	h2 {
 		@include centrage;
     }

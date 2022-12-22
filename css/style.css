@@ -221,6 +221,13 @@ main {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+.tipos article {
+  opacity: 0.7;
+}
+.tipos article:hover {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
 .tipos h2 {
   width: 100%;
   text-align: center;
