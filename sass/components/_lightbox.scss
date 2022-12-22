@@ -1,0 +1,31 @@
+#lightbox{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    background-color:  #000000c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+        .contenu{
+           position: fixed;
+           width: 40%;
+           margin: auto;
+           top: 40px;
+            img{
+                width: 100%;
+                object-fit: cover;
+               }
+        }
+        .close{
+            color: white;
+            font-size: 40px;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+}

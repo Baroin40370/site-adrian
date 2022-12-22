@@ -950,5 +950,36 @@ footer .mention {
     margin: unset;
   }
 }
+#lightbox {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7882352941);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#lightbox .contenu {
+  position: fixed;
+  width: 40%;
+  margin: auto;
+  top: 40px;
+}
+#lightbox .contenu img {
+  width: 100%;
+  object-fit: cover;
+}
+#lightbox .close {
+  color: white;
+  font-size: 40px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
