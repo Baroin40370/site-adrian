@@ -957,7 +957,7 @@ footer .mention {
     margin: unset;
   }
   .lightbox.active .contenu {
-    width: 70%;
+    width: 90%;
     top: 60px;
     height: 350px;
   }
