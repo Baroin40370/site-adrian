@@ -972,6 +972,9 @@ footer .mention {
   margin: auto;
   top: 40px;
   bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .lightbox .contenu img {
   width: 100%;
