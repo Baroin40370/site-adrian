@@ -135,12 +135,7 @@
         padding: 10px;
     }.adrian{
         margin-top: 11rem;
-        .lightbox{
-            .contenu{
-                width: 100%;
-                top:60px;
-            }
-        }.propos{
+        .propos{
         width: 100%;
         display: flex;
         justify-content: center;
@@ -184,10 +179,17 @@
                 font-size: 25px;
             }h2{
                 font-size: 20px;
-            }    
-        }.contact article{
+            }
+            }
+        .contact article{
             margin:unset;
         }
-         
+       }
+        .lightbox.active{
+        .contenu{
+            width: 100%;
+            top:60px;
+        }
     }
+  
 }

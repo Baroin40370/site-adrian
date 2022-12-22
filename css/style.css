@@ -893,10 +893,6 @@ footer .mention {
   .adrian {
     margin-top: 11rem;
   }
-  .adrian .lightbox .contenu {
-    width: 100%;
-    top: 60px;
-  }
   .adrian .propos {
     width: 100%;
     display: flex;
@@ -952,6 +948,10 @@ footer .mention {
   }
   .aviso main .contact article {
     margin: unset;
+  }
+  .lightbox.active .contenu {
+    width: 100%;
+    top: 60px;
   }
 }
 .lightbox {
