@@ -1,4 +1,4 @@
-#lightbox{
+.lightbox{
     left: 0;
     top: 0;
     bottom: 0;
@@ -8,13 +8,13 @@
     background-color:  #000000c9;
     display: flex;
     justify-content: center;
-    align-items: center;
-    display: none;
-        .contenu{
+    visibility: hidden;
+      .contenu{
            position: fixed;
-           width: 40%;
+           width: 60%;
            margin: auto;
            top: 40px;
+           bottom: 40px;
             img{
                 width: 100%;
                 object-fit: cover;
@@ -29,3 +29,6 @@
             cursor: pointer;
         }
 }
+.lightbox.active{
+    visibility: visible;
+  }

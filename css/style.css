@@ -893,6 +893,10 @@ footer .mention {
   .adrian {
     margin-top: 11rem;
   }
+  .adrian .lightbox .contenu {
+    width: 100%;
+    top: 60px;
+  }
   .adrian .propos {
     width: 100%;
     display: flex;
@@ -950,7 +954,7 @@ footer .mention {
     margin: unset;
   }
 }
-#lightbox {
+.lightbox {
   left: 0;
   top: 0;
   bottom: 0;
@@ -960,26 +964,30 @@ footer .mention {
   background-color: rgba(0, 0, 0, 0.7882352941);
   display: flex;
   justify-content: center;
-  align-items: center;
-  display: none;
+  visibility: hidden;
 }
-#lightbox .contenu {
+.lightbox .contenu {
   position: fixed;
-  width: 40%;
+  width: 60%;
   margin: auto;
   top: 40px;
+  bottom: 40px;
 }
-#lightbox .contenu img {
+.lightbox .contenu img {
   width: 100%;
   object-fit: cover;
 }
-#lightbox .close {
+.lightbox .close {
   color: white;
   font-size: 40px;
   position: fixed;
   right: 20px;
   top: 20px;
   cursor: pointer;
+}
+
+.lightbox.active {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

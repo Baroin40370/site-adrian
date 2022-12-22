@@ -135,7 +135,12 @@
         padding: 10px;
     }.adrian{
         margin-top: 11rem;
-       .propos{
+        .lightbox{
+            .contenu{
+                width: 100%;
+                top:60px;
+            }
+        }.propos{
         width: 100%;
         display: flex;
         justify-content: center;
