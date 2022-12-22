@@ -957,9 +957,9 @@ footer .mention {
     margin: unset;
   }
   .lightbox.active .contenu {
-    width: 90%;
+    width: auto;
     top: 60px;
-    height: 350px;
+    height: auto;
   }
 }
 .lightbox {
