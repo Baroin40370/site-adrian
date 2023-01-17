@@ -285,6 +285,21 @@ main {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
+  opacity: 0;
+}
+.tipos .bloc:hover {
+  animation: texteFade 2s ease-in;
+  opacity: 1;
+}
+@keyframes texteFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .tipos .bloc p {
   text-align: inherit;

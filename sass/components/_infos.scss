@@ -32,10 +32,14 @@ article{
     
      h2{
       @include titrearticle;
+     
+      
      }
     p{
         text-align: inherit;
         padding: 5px;
+        
+        
         
     }.icon{
         width: 75px;
