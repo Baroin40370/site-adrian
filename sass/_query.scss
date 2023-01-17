@@ -1,5 +1,20 @@
 @media (max-width: 740px){
-        p{
+    body{
+        overflow-x: hidden;
+    }
+    .lightbox.active{
+        .close{
+          top: 60px;
+        }
+        .contenu{
+            width: 80%;
+            top:90px;
+             img{
+                height: 450px;
+             }
+            }
+        }
+    p{
             font-size: 18px;
         }
     header{
@@ -9,42 +24,63 @@
             padding-left: unset;
             margin-right: unset;
             padding-right: unset;
-            z-index:1;
-            
+            position: fixed;
+            background-color: black;
+            flex-direction: column;
+            align-items: flex-start;
+            top: 0;
+            height: 20px;
+            border-radius: unset;
+            z-index: 1;
             .deroulant{
                 li{
                     margin-left: 4rem;
                     padding: unset;
                 }
             }
-            .premier{
+            .border{
+                position: fixed;
+                top: 20px;
+                left: -80px;
+                transform: translateX(-125%);
+                transition: transform 0.5s ease-in;
+                &.active{
+                    --size:400px;
+                    transform: translateX(0%);
+                    width: 100%;
+                    height: 70%;
+                    background-color: black;
+                    border-radius: 0 0 100% 0;
+                    animation: navAnim 2s ease-in;
+                }                  
+            }
+            .nav-links{
+                flex-direction: column;
+                transform: translateX(-125%);
+                transition: transform 0.5s ease-in;
+                position: fixed;
+                top: 60px;
+                padding-top: 2rem;
+                align-items: flex-start;
+                padding-left: 2rem;
                 display: none;
-                opacity: 0;
-                margin-top: 3rem;
+                &.active{
+                    transform: translateX(0%);
+                    display: block;
+                 }
+                li{
+                    opacity: 0;
                 }
-                .align{
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    width: 100%;
-                    margin-left: 2rem;
                 }
-                 .query{
-                    width: 100%;
-                    &:hover .premier,
-                    .premier :hover {
-                        visibility: visible;
-                        opacity: 1;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                    }
-                }.query i{
-                display: flex;
-                font-size: 30px;
-                cursor: pointer;
-            }   
-            }h1{
+            .query{
+                    display: block;
+                    cursor: pointer;
+                    position: fixed;
+                    left: 2rem;
+                    z-index: 1;
+                }
+            }
+            h1{
             margin-top: 10rem;
             }li{
             margin: unset;
@@ -57,7 +93,38 @@
             p{
                 text-align: center;
             }
-        }      
+        } 
+       
+        
+            @keyframes navAnim {
+                50% {
+                  transform: scale(1.2);
+                }
+                100% {
+                  transform: scale(1);
+                }
+              }    
+        @keyframes navLinkFade {
+            from{
+              opacity: 0;
+              transform: translateX(-125px);
+            }
+            to{
+              opacity: 1;
+              transform: translateX(0px);
+            }
+        }
+        .toggle .bar1{
+            transform: rotate(-45deg) translate(-5px, 6px);
+            
+        }
+        .toggle .bar2{
+            opacity: 0;
+        }
+        .toggle .bar3{
+            transform: rotate(45deg) translate(-5px, -6px);
+            
+        }
     #banniere{
        #slider{
         width: 100%;
@@ -185,12 +252,18 @@
             margin:unset;
         }
        }
-        .lightbox.active{
-        .contenu{
-            width: auto;
-            top:60px;
-            height: auto;
-        }
-    }
+        
   
+}
+@media(max-width: 350px){
+    header nav .deroulant {
+        a{
+        font-size: 20px;
+        }
+        li{
+            margin-left: 2.5rem;
+        }
+   }#banniere #precedent, #suivant{
+    display: none;
+   }
 }

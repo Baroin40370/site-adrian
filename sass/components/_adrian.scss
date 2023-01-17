@@ -30,9 +30,9 @@
         }
         a {
           margin-left: 5px;
+          transition: 0.7s ease;
           &:hover{
-            opacity: 0.8;
-            color: #783a1d;
+           color: #783a1d;
           }
         }.lien{
             font-size: 25px ;

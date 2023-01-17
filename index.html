@@ -16,9 +16,13 @@
     <body>
       <header>
         <nav>
-          <ul class="align">
-           <li class="query"><i class="fas fa-bars"></i>
-          <ul class="premier">
+          <div class="query">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+          <div class="border"></div>
+         <ul class="nav-links">
             <li><a href='index.html'>INICIO</a></li>
             <li><a href="index.html#contacto">CONTACTO</a></li>
             <li><a href="index.html#artistas">ARTISTAS</a></li>
@@ -30,10 +34,8 @@
               <li><a href="pages/grafiti.html#portafolio">Graffiti</a></li>
             </ul>
            </li>
-          </ul>
-        </li>
-      </ul> 
-    </nav>
+          </ul> 
+      </nav>
      <h1>Lorem ipsum</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </header>
@@ -44,6 +46,9 @@
             <img src='asset/minimalista.webp' alt="foto de tatuaje" id="slide">
             <div id="precedent" onclick="ChangeSlide(-1)"><</div>
             <div id="suivant" onclick="ChangeSlide(1)">></div>
+            <div class="dots">
+              
+            </div>
      </div>
       </article>
     </section>
@@ -216,6 +221,7 @@
   </script>
   <script src="slider.js"></script>
   <script src="scroll.js"></script>
+  <script src="nav.js"></script>
 </html>
 
 

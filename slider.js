@@ -4,6 +4,7 @@ if (typeof slide === "undefined")
 }
 
 let numero = 0;
+let dots = document.querySelector('.dots');
 
 function ChangeSlide(sens) {
     numero = numero + sens;
@@ -11,6 +12,39 @@ function ChangeSlide(sens) {
         numero = slide.length - 1;
     if (numero > slide.length - 1)
         numero = 0;
-    document.getElementById("slide").src = slide[numero];
+    setSlide();
 };
+
+function setSlide() {
+    const actif = document.querySelector('.dot.active');
+    if (actif) {
+        actif.classList.remove('active');
+    }
+    const dot = document.querySelector('.dot[data-index="'+ numero +'"]');    
+    dot.classList.add('active');
+    document.getElementById("slide").src = slide[numero];
+}
+
+function onDotClick(event){
+    const {target} = event;
+    let index = target.getAttribute('data-index');
+    numero = parseInt(index);
+    setSlide();
+}
+
+//console.log(slide)
+function navigationDots(){    
+    for (let i = 0 ; i < slide.length; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        dot.setAttribute('data-index',i);
+        dot.addEventListener('click',onDotClick);
+        dots.appendChild(dot);
+        console.log(dot)        
+    }
+} 
+
+navigationDots()
 ChangeSlide(0);
+
+
