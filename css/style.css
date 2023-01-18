@@ -267,6 +267,7 @@ main {
 .tipos article:hover {
   opacity: 1;
   transition: opacity 0.4s ease;
+  transform: scale(1.01);
 }
 .tipos h2 {
   width: 100%;
@@ -317,7 +318,7 @@ main {
   margin-bottom: 2rem;
   border-color: #783a1d;
   border-bottom-style: solid;
-  width: 22%;
+  width: 100%;
 }
 .tipos .minimalista {
   background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/minimalista.webp);
@@ -340,7 +341,7 @@ main {
   margin-bottom: 2rem;
   border-color: #783a1d;
   border-bottom-style: solid;
-  width: 41%;
+  width: 100%;
 }
 .tipos .tribal {
   width: 45%;
@@ -363,7 +364,7 @@ main {
   margin-bottom: 2rem;
   border-color: #783a1d;
   border-bottom-style: solid;
-  width: 24%;
+  width: 100%;
 }
 .tipos .realismo {
   width: 45%;
@@ -386,7 +387,7 @@ main {
   margin-bottom: 2rem;
   border-color: #783a1d;
   border-bottom-style: solid;
-  width: 32%;
+  width: 100%;
 }
 .tipos .dimension {
   background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/dimension.webp);
@@ -409,7 +410,7 @@ main {
   margin-bottom: 2rem;
   border-color: #783a1d;
   border-bottom-style: solid;
-  width: 41%;
+  width: 100%;
 }
 .tipos .mandalas {
   background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/mandala.webp);
@@ -432,7 +433,7 @@ main {
   margin-bottom: 2rem;
   border-color: #783a1d;
   border-bottom-style: solid;
-  width: 35%;
+  width: 100%;
 }
 .tipos .diseño {
   background-image: linear-gradient(180deg, rgba(14, 14, 14, 0.7) 0%, rgba(1, 1, 1, 0.3) 100%), url(../asset/diseno.webp);
@@ -455,7 +456,7 @@ main {
   margin-bottom: 2rem;
   border-color: #783a1d;
   border-bottom-style: solid;
-  width: 23%;
+  width: 100%;
 }
 
 #artistas {
@@ -916,51 +917,108 @@ footer .mention {
     width: 100%;
     height: 280px;
   }
-  .tipos .bloc {
-    opacity: 0;
-    opacity: 0;
-  }
-  .tipos .bloc:hover {
-    animation: texteFade 2s ease-in;
+  .tipos article {
     opacity: 1;
   }
-  @keyframes texteFade {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+  .tipos .texte {
+    opacity: 0.2;
   }
   .tipos .minimalista {
     width: 100%;
     height: auto;
   }
+  .tipos .minimalista:hover .texte,
+  .tipos .minimalista .texte:hover {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  .tipos .minimalista .underline {
+    width: 140px;
+  }
+  .tipos .minimalista .underline h3 {
+    width: 100%;
+  }
   .tipos .realismo {
     width: 100%;
     height: auto;
+  }
+  .tipos .realismo:hover .texte,
+  .tipos .realismo .texte:hover {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  .tipos .realismo .underline {
+    width: 100px;
+  }
+  .tipos .realismo .underline h3 {
+    width: 100%;
   }
   .tipos .tribal {
     width: 100%;
     height: auto;
   }
+  .tipos .tribal:hover .texte,
+  .tipos .tribal .texte:hover {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  .tipos .tribal .underline {
+    width: 80px;
+  }
+  .tipos .tribal .underline h3 {
+    width: 100%;
+  }
   .tipos .dimension {
     width: 100%;
     height: auto;
+  }
+  .tipos .dimension:hover .texte,
+  .tipos .dimension .texte:hover {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  .tipos .dimension .underline {
+    width: 140px;
+  }
+  .tipos .dimension .underline h3 {
+    width: 100%;
   }
   .tipos .mandalas {
     width: 100%;
     height: auto;
   }
+  .tipos .mandalas:hover .texte,
+  .tipos .mandalas .texte:hover {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  .tipos .mandalas .underline {
+    width: 120px;
+  }
+  .tipos .mandalas .underline h3 {
+    width: 100%;
+  }
   .tipos .diseño {
     width: 100%;
     height: auto;
   }
+  .tipos .diseño .underline {
+    width: 70px;
+  }
+  .tipos .diseño .underline h3 {
+    width: 100%;
+  }
   .tipos .cover {
     width: 100%;
     height: auto;
+  }
+  .tipos .cover:hover .texte,
+  .tipos .cover .underline {
+    width: 70px;
+  }
+  .tipos .cover:hover .texte h3,
+  .tipos .cover .underline h3 {
+    width: 100%;
   }
   #artistas {
     flex-flow: column;

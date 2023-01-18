@@ -131,48 +131,105 @@
         height: 280px;
        }
     }.tipos{
-        .bloc{
-            opacity: 0;
-            opacity: 0;
-			&:hover{
-				animation: texteFade 2s ease-in;
-				opacity: 1;
-			}
-			@keyframes texteFade {
-				from{
-				  opacity: 0;
-				  transform: translateY(50px);
-				  
-				}
-				to{
-				  opacity: 1;
-				  transform: translateY(0px);
-				  
-				}
+        article{
+            opacity: 1;
         }
-    }
+        .texte{
+            opacity: 0.2;
+            }
         .minimalista{
             width: 100%;
             height: auto;
+            &:hover .texte,
+           .texte:hover{
+                transition: opacity 0.5s ease;
+                opacity: 1;
+                }
+                
+            .underline{
+                width: 140px;
+                h3{
+                    width: 100%;
+                }
+            }
         }.realismo{
             width: 100%;
             height: auto;
+            &:hover .texte,
+           .texte:hover{
+                transition: opacity 0.5s ease;
+                opacity: 1;
+                }
+                
+            .underline{
+                width: 100px;
+                h3{
+                    width: 100%;
+                }
+            }
         }.tribal{
             width: 100%;
             height: auto;
+            &:hover .texte,
+           .texte:hover{
+                transition: opacity 0.5s ease;
+                opacity: 1;
+                }
+                
+            .underline{
+                width: 80px;
+                h3{
+                    width: 100%;
+                }
+            }
         }.dimension{
             width: 100%;
             height: auto;
+            &:hover .texte,
+           .texte:hover{
+                transition: opacity 0.5s ease;
+                opacity: 1;
+                }
+            .underline{
+                width: 140px;
+                h3{
+                    width: 100%;
+                }
+            }
         }.mandalas{
             width: 100%;
             height: auto;
+            &:hover .texte,
+           .texte:hover{
+                transition: opacity 0.5s ease;
+                opacity: 1;
+                }
+                .underline{
+                width: 120px;
+                h3{
+                    width: 100%;
+                }
+            }
         }.diseño{
             width: 100%;
             height: auto;
+            .underline{
+                width: 70px;
+                h3{
+                    width: 100%;
+                }
+            }
         }.cover{
             width: 100%;
             height: auto;
-        }
+            &:hover .texte,
+           .underline{
+                width: 70px;
+                h3{
+                    width: 100%;
+                }
+            }
+       }
     }#artistas{
         flex-flow: column;
         align-items: center;

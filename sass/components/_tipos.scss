@@ -10,11 +10,14 @@
 	margin-right: 1rem;
 	 article{
 		opacity: 0.7;
+		&:hover 
+		{
+			opacity:1;
+			transition: opacity 0.4s ease;
+			transform: scale(1.01);
+		}
 	 }
-	 article:hover {
-		opacity:1;
-		transition: opacity 0.4s ease;
-	}
+	 
 	 
 	h2 {
 		@include centrage;
@@ -26,6 +29,7 @@
 	p{
 		@include centrage;
 		margin-bottom: 2rem;
+		
 		
 	}.bloc{
         display: flex;
@@ -51,7 +55,7 @@
 		position: relative;
 			h3{
 			@include tiposh3;
-			width: 22%;
+			width: 100%;
 			}
 	}.minimalista{
         background-image: $degrade,
@@ -61,7 +65,7 @@
         @include tiposarticle;
 			h3{
 			@include tiposh3;
-			width: 41%;
+			width: 100%;
 			
 			}	
 		}.tribal{
@@ -72,7 +76,7 @@
 			background-position: left,top;
 				h3{
 					@include tiposh3;
-					width: 24%;
+					width: 100%;
 				}
 			}.realismo{
 				@include tiposarticle;
@@ -82,7 +86,7 @@
 				background-position: center;
 					h3{
 						@include tiposh3;
-						width: 32%;
+						width: 100%;
 					}
 			}.dimension{
 				background-image: $degrade,
@@ -92,7 +96,7 @@
 				@include tiposarticle;
 					h3{
 					@include tiposh3;
-					width: 41%;
+					width: 100%;
 					}
 			}.mandalas{
 				background-image: $degrade,
@@ -102,7 +106,7 @@
 				@include tiposarticle;
 					h3{
 					@include tiposh3;
-					width: 35%;
+					width: 100%;
 					}
 			}.diseño{
 				background-image: $degrade,
@@ -112,7 +116,7 @@
 				@include tiposarticle;
 					h3{
 					@include tiposh3;
-					width: 23%;
+					width: 100%;
 					}
 			}																		
 	}
