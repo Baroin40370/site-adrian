@@ -799,10 +799,7 @@ footer .mention {
     font-size: 20px;
   }
   header nav .deroulant li {
-    margin-left: 19px;
-  }
-  #banniere #precedent, #suivant {
-    display: none;
+    margin-left: 25px;
   }
 }
 @media (max-width: 740px) {
