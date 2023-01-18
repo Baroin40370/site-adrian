@@ -1,3 +1,16 @@
+@media(max-width: 370px){
+    header nav .deroulant {
+        a{
+        font-size: 20px;
+        }
+        li{
+            margin-left: 19px;
+        }
+   }#banniere #precedent, #suivant{
+    display: none;
+   }
+}
+
 @media (max-width: 740px){
     body{
         overflow-x: hidden;
@@ -332,15 +345,3 @@
         
   
 } 
-@media(max-width: 370px){
-    header nav .deroulant {
-        a{
-        font-size: 20px;
-        }
-        li{
-            margin-left: 19px;
-        }
-   }#banniere #precedent, #suivant{
-    display: none;
-   }
-}
