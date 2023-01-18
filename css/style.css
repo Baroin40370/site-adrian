@@ -798,9 +798,6 @@ footer .mention {
   header nav .deroulant a {
     font-size: 20px;
   }
-  header nav .deroulant li {
-    margin-left: 25px;
-  }
 }
 @media (max-width: 740px) {
   body {
@@ -835,7 +832,7 @@ footer .mention {
     z-index: 1;
   }
   header nav .deroulant li {
-    margin-left: 4rem;
+    margin-left: 15px;
     padding: unset;
   }
   header nav .border {

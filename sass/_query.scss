@@ -3,13 +3,9 @@
         a{
         font-size: 20px;
         }
-        li{
-            margin-left: 25px;
-        }
-   
-   }
+        
+     }
 }
-
 @media (max-width: 740px){
     body{
         overflow-x: hidden;
@@ -46,7 +42,7 @@
             z-index: 1;
             .deroulant{
                 li{
-                    margin-left: 4rem;
+                    margin-left: 15px;
                     padding: unset;
                 }
             }
