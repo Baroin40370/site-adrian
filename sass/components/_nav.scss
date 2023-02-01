@@ -3,16 +3,13 @@ nav{
 	border-radius:0 0 1rem 1rem;
 	display: flex;
 	flex-flow: row nowrap;
-	margin-right: 2rem;
-	margin-left: 2rem;
-	margin-bottom: 2rem;
 	padding: 3rem;
 	@include fondbox;
-	justify-content: center;
 	position: absolute;
-	width: 83%;
-	
+	right: 2rem;
+	left: 2rem;
 	a{
+		
 		transition: 0.7s ease;
 			&:hover{
 				color: #783a1d;
@@ -21,13 +18,13 @@ nav{
 		ul{
         display: flex;
 	    flex-flow: row nowrap;
+		width: 100%;
      }
 	 li{
-        margin-right: 2rem;
         text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
-		margin-left: 2rem;
-		position: relative;
 		transition: 0.7s ease;
+		width: 20%;
+		margin-right: 2rem;
 			&:hover{
 				color: #783a1d;
 			}

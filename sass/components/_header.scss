@@ -1,9 +1,11 @@
 header{
+	position: relative;
 	@include center;
     h1{
 	@include centrage;
 	margin-top: 21rem;
-	width: 100%;
+	
+	
 	
 }
 p{

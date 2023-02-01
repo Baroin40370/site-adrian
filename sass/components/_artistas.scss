@@ -2,32 +2,27 @@
 	display: flex;
 	justify-content: space-evenly;
 	flex-flow: row wrap;
-	margin-left: 2rem;
-	margin-right: 2rem;
-	padding: 3rem;
-	margin-top: 4rem;
-	margin-bottom: 3rem;
+	padding: 3rem 0 0 0;
+	margin: 0rem 2rem 3rem 2rem;
 	border-radius:1rem;
 	width: 100%;
 	background:$degrade;
 	color: black;
-	margin-top: 4rem;
-	margin-bottom: 3rem;
+	
 h2{
 	width: 100%;
 	font-size: 32px;
-	margin-bottom: 1rem;
 	text-align: center;
 	
 }
 article{
 	@include center;
-	margin: 1rem;
 	text-align: center;
-	width: 35%;
+	width: 50%;
 	height: 70%;
 	position: relative;
 	mix-blend-mode: luminosity;
+	padding: 0 2rem 0 2rem;
  }article:hover{
 	transform: scale(1.01);
  }
@@ -50,18 +45,16 @@ h3{
 	font-size: 40px;
 	color:$color-white;
 	position: absolute;
-	bottom: 20px;
-	left: 10px;
-	margin-left: 10px;
+	bottom: 10%;
+	left: 10%;
 	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 .fa-facebook{
 	font-size: 40px;
 	color: $color-white;
 	position: absolute;
-	bottom: 20px;
-	left: 60px;
-	margin-left: 10px;
+	bottom: 10%;
+	left: 25%;
 	text-shadow: rgba(0, 0, 0, 0.298039) 0px 5px 0px;
 }
 
@@ -70,6 +63,7 @@ h3{
 	justify-content: space-around;
 	font-family: $font-2;
 	height: 100%;
+	width: 100%;
  }
 
 p{
