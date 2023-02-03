@@ -142,7 +142,7 @@ main {
 main h1 {
   width: 100%;
   text-align: center;
-  margin-top: 21rem;
+  margin-top: 24rem;
 }
 main .para {
   margin: 2rem;
@@ -679,18 +679,35 @@ footer .mention {
 }
 
 .adrian {
-  margin-top: 22rem;
   width: 100%;
 }
 .adrian .propos {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 6rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.adrian .propos .titre {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.adrian .propos .pintura h1 {
+  width: 27%;
+}
+.adrian .propos .graffiti h1 {
+  width: 11%;
+}
+.adrian .propos .estefa h1 {
+  width: 13%;
+}
+.adrian .propos .adri h1 {
+  width: 10%;
 }
 .adrian .propos h1 {
-  width: 100%;
   font-size: 32px;
   margin-bottom: 1rem;
   border-color: #783a1d;
@@ -699,8 +716,6 @@ footer .mention {
 }
 .adrian .propos article {
   width: 45%;
-  display: flex;
-  justify-content: end;
   padding: 0 1rem 0 1rem;
 }
 .adrian .propos h3 {
@@ -725,13 +740,23 @@ footer .mention {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+.adrian .propos .lien .fa-youtube {
+  font-size: 45px;
+}
+.adrian .propos .lien i {
+  font-size: 40px;
+  transition: 0.7s ease;
+  margin-right: 2rem;
+}
+.adrian .propos .lien i:hover {
+  color: #783a1d;
+}
 .adrian #portafolio {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  margin-top: 6rem;
 }
 .adrian #portafolio article {
   border-radius: 15px;
@@ -1072,9 +1097,6 @@ footer .mention {
     margin: unset;
     padding: 10px;
   }
-  .adrian {
-    margin-top: 11rem;
-  }
   .adrian .propos {
     width: 100%;
     display: flex;
@@ -1084,16 +1106,19 @@ footer .mention {
     padding-right: 20px;
     text-align: center;
   }
-  .adrian .propos h1 {
+  .adrian .propos .titre {
     width: 100%;
+  }
+  .adrian .propos .titre h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 7rem;
   }
   .adrian .propos .lien {
     font-size: 20px;
   }
   .adrian .propos article {
     width: 100%;
-    display: flex;
-    justify-content: center;
     margin-bottom: 3rem;
   }
   .adrian #portafolio {

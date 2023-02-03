@@ -286,7 +286,6 @@
         margin: unset;
         padding: 10px;
     }.adrian{
-        margin-top: 11rem;
         .propos{
         width: 100%;
         display: flex;
@@ -295,14 +294,19 @@
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;
+        .titre{
+            width: 100%;
             h1{
                 width: 100%;
-            }.lien{
+                text-align: center;
+                margin-top: 7rem;
+               
+            }
+            
+        }.lien{
                 font-size: 20px;
             }article{
                 width: 100%;
-                display: flex;
-                justify-content: center;
                 margin-bottom: 3rem;
             }
         } #portafolio{

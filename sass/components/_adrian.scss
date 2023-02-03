@@ -1,14 +1,40 @@
 .adrian{
-    margin-top: 22rem;
     width: 100%;
     .propos{
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
-            align-items: center;
-            margin-bottom: 6rem;
-        h1{
+            justify-content: space-between;
             width: 100%;
+            margin-bottom: 3rem;
+           .titre{
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 3rem;
+                display: flex;
+                justify-content: center
+            }
+            .pintura{
+                h1{
+                    width: 27%;
+                }
+            }
+            .graffiti{
+                h1{
+                    width: 11%;
+                }
+            }
+            .estefa{
+                h1{
+                    width: 13%;
+                }
+            }
+            .adri{
+                h1{
+                    width: 10%;
+                }
+            }
+        h1{
+            
             font-size: 32px;
             margin-bottom: 1rem;
             border-color: #783a1d;
@@ -17,8 +43,6 @@
          }   
         article{
             width: 45%;
-            display: flex;
-            justify-content: end;
             padding: 0 1rem 0 1rem;
           }
         h3{
@@ -41,6 +65,18 @@
             font-size: 25px ;
             padding-bottom: 10px;
             padding-top: 10px;
+            .fa-youtube{
+                font-size: 45px;
+               }
+               i{
+                font-size: 40px;
+                transition: 0.7s ease;
+                margin-right: 2rem;
+                &:hover{
+                    color: #783a1d;
+                   }
+                   
+               }
             }
         
     }
@@ -51,7 +87,7 @@
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        margin-top: 6rem;
+        
          article{
             border-radius: 15px;
             width: 30%;
