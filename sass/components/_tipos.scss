@@ -81,7 +81,7 @@
 			}.realismo{
 				@include tiposarticle;
 				background-image: $degrade,
-				url(../asset/realismo.webp);
+				url(../asset/leon.webp);
 				background-color: #1a1e28;
 				background-position: center;
 					h3{
@@ -90,7 +90,7 @@
 					}
 			}.dimension{
 				background-image: $degrade,
-				url(../asset/dimension.webp);
+				url(../asset/realismo.webp);
 				background-color: #1a1e28;
 				background-position: right;
 				@include tiposarticle;
