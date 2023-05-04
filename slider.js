@@ -32,7 +32,7 @@ function onDotClick(event){
     setSlide();
 }
 
-//console.log(slide)
+
 function navigationDots(){    
     for (let i = 0 ; i < slide.length; i++) {
         const dot = document.createElement("div");
@@ -40,7 +40,7 @@ function navigationDots(){
         dot.setAttribute('data-index',i);
         dot.addEventListener('click',onDotClick);
         dots.appendChild(dot);
-        console.log(dot)        
+              
     }
 } 
 
